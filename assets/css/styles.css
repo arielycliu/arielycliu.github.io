@@ -240,7 +240,7 @@ img{
   width: 295px;
 }
 
-/*BUTTONS*/
+/*BUTTONS   295px home img*/ 
 .button{
   display: inline-block;
   background-color: var(--first-color);
@@ -501,7 +501,12 @@ img{
     margin-right: auto;
   }
 }
-
+@media screen and (max-width: 1024px) and (min-width: 512px){
+  .home__img{
+    width: 350px;
+    bottom: 20%;
+  }
+}
 @media screen and (min-width: 1024px){
   .bd-grid{
     margin-left: auto;
