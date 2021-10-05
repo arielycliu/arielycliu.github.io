@@ -3,6 +3,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500&family=Barlow:wght@300;400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
 
 /*########### VARIABLES CSS ###########*/
 :root{
@@ -70,6 +72,11 @@ h1{
 h2, p{
   margin: 0;
 }
+h3 {
+  font-family: 'Courier Prime', monospace;
+  font-size: medium;
+  color: #2d2f38;
+}
 ul{
   margin: 0;
   padding: 0;
@@ -90,6 +97,7 @@ img{
   position: relative;
   font-family: 'Barlow Condensed', sans-serif;
   font-weight: 400;
+  font-style: italic;
   font-size: var(--h2-font-size);
   color: var(--first-color);
   margin-top: var(--mb-2);
@@ -238,6 +246,18 @@ img{
   right: 0;
   bottom: 0;
   width: 295px;
+}
+.line-1{
+  position: relative;
+  top: 50%;  
+  width: 24em;
+  margin: 0 auto;
+  border-right: 2px solid rgba(255,255,255,.75);
+  font-size: 180%;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);    
 }
 
 /*BUTTONS   295px home img*/ 
