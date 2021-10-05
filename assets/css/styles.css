@@ -132,7 +132,7 @@ img{
   box-shadow: 0 1px 4px rgba(146,161,176,.15);
 }
 
-/*########### NAV ###########*/
+/*########### NAVIGATION MENU ###########*/
 .nav{
   height: var(--header-height);
   display: flex;
@@ -421,8 +421,8 @@ img{
   margin: 0 var(--mb-2)
 }
 
-/* ########### MEDIA QUERIES###########*/
-@media screen and (min-width: 768px){
+/* ########### MEDIA QUERIES ###########*/
+@media screen and (min-width: 768px){  /* Coding responsive for different devices */
   body{
     margin: 0;
   }
