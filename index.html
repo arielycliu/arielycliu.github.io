@@ -1,1524 +1,250 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Ariel's personal website">
-    <meta name="keywords" content="dark, html, one page, bootstrap, creative, clean, modern,contact,business,personal, portfolio">
-    <title>Ariel Liu</title>
-    <!--css styles-->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/all.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-    <link rel="stylesheet" href="css/lightbox.css">
-    <link rel="stylesheet" href="css/jquery.pagepiling.min.css" />
-    <link href="https://fonts.googleapis.com/css?family=Martel:200,300,400,600,700,800,900%7CRaleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i%7CRoboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.css">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <link rel="stylesheet" href="css/animate.min.css">
-    <!---title logo icon-->
-    <link rel="shortcut icon" href="images/favicon.ico"/>
-    <!-- Respond.js IE8 support media queries -->
-    <!--[if lt IE 9]>
-            <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-</head>
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
 
-<body>
-    <div id="pagepiling" class="imgBg">
-        <!-- Start Preloader -->
-        <div class="preloader">
-            <div class="preloader-img"></div>
-        </div>
-        <!-- End Preloader -->
-
-        <!--Start Header-->
-        <header>
-            <div class="logo-area">
-                <a href="index.html" class="logo">
-                    <img src="images/logo.png" alt="logo" height="50" width="100">
-                </a>
-            </div>
-
-            <div class="header-info-area">
-                <a class="info-btn" id="header-info-btn" href="#header-info-bar">
-                    <span class="top"></span>
-                    <span class="middle"></span>
-                    <span class=bottom></span>
-                </a>
-                <div id="header-info-bar">
-                    <div class="close-animatedModal close-header-info-bar">
-                        <i class="fas fa-times"></i>
-                    </div>
-                    <div class="modal-content">
-                        <nav class="menu" id="menu">
-                            <ul id="mainMenu">
-                                <li data-menuanchor="home" class="active"><a href="#home">Home</a></li>
-                                <li data-menuanchor="about"><a href="#about">About</a></li>
-                                <!--<li data-menuanchor="service"><a href="#service">Skills</a></li>-->
-                                <li data-menuanchor="service"><a href="#service">Portfolio</a></li>
-                                <!--<li data-menuanchor="client-testimonial"><a href="#client-testimonial">Testimonial</a></li>
-                                <li data-menuanchor="blog"><a href="#blog">Blog</a></li> -->
-                                <li data-menuanchor="resume"><a href="#resume">Contact</a></li>
-                            </ul>
-                        </nav>
-                        <!--Start Newsletter area-->
-                        <div class="newsletter" id="newsletter">
-                            <div class="container">
-                                <div class="row">
-                                    <h5>Get Updates:</h5>
-                                    <div class="newsletter-form">
-                                        <form id="mc-form">
-                                            <input type="email" id="mc-email" class="newsletter-email" placeholder="Type your email here">
-                                            <button type="submit" class="submit-btn">
-                                                <span>Subscribe</span>
-                                            </button>
-                                            <label for="mc-email"></label>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--End Newsletter area-->
-
-                    </div>
+        <title>Ariel portfolio website</title>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#home" class="nav__logo">Ariel</a>
                 </div>
-            </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                        <li class="nav__item"><a href="#portfolio" class="nav__link">Portfolio</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
         </header>
-        <!--End Header-->
 
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    <h1 class="home__title">Hello,<br>I'm <span class="home__title-color">Ariel</span><br> <i>Student & Developer</i></h1>          
+                    <a href="mailto:ariel.yc.liu@gmail.com" class="button">Contact Me</a>
+                </div>
+                <div class="home__img">    
+                    <img src="assets/img/intro.png" alt="girl working hard at desk">
+                </div>
+                <div class="home__social">
+                    <a href="https://github.com/arielycliu"  target="_blank" class="home__social-icon"><i class='bx bxl-github'></i></a>
+                    <a href="https://medium.com/@arielycliu"  target="_blank" class="home__social-icon"><i class='bx bxl-medium' ></i></a>
+                    <a href="https://www.linkedin.com/in/arielycliu/"  target="_blank" class="home__social-icon"><i class='bx bxl-linkedin' ></i></a>
+                </div>
+            </section>
 
-        <!--Start Welcome Section-->
-        <section class="welcome-area home animated-text section pp-scrollable" id="welcome-area">
-                <div class="particle-bg " id="welcome-image-area">
-                <div id="particles-js"></div>
-                    <div class="content-container">
-                        <div class="overlayImg"></div>
-                        <div class="title-small"><p>HOME</p></div>
-                        <div class="display-table">
-                            <div class="display-content">
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <div class="welcome-text">
-                                                <div class="type-wrap">
-                                                    <div id="typed-strings">
-                                                        <h1>Hello, I'm <span>Ariel Liu</span></h1>
-                                                        <h1>I'm a <span>Developer</span></h1>
-                                                    </div>
-                                                    <span id="typed"></span>
-                                                </div>
-                                                <p style="font-size:20px;">
-                                                    Student | Machine Learning Enthusiast</p>
-                                                <div class="social-icons">
-                                                    <!-- <a href="https://www.facebook.com/ariel.liu.56808"><i class="fab fa-facebook-f"></i></a> -->
-                                                    <!--<a href="#"><i class="fab fa-twitter"></i></a> -->
-                                                    <a href="https://github.com/arielycliu"><i class="fab fa-github"></i></a>
-                                                    <!-- <a href="https://www.youtube.com/channel/UCdCz8ICB5CRUbVouVu16ZkA"><i class="fab fa-youtube"></i></a> -->
-                                                    <a href="https://medium.com/@arielycliu "><i class="fab fa-medium"></i></a>
-                                                    <a href="https://www.linkedin.com/in/arielycliu/"><i class="fab fa-linkedin-in"></i></a>
-                                                    <!--<a href="ariel.yc.liu@gmail.com"><i class="fab fa-google"></i></a>-->
+            <!--===== ABOUT =====-->
+            <section class="about section " id="about">
+                <h2 class="section-title">ABOUT ME</h2>
 
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <img src="assets/img/transparent about.png" alt="">
+                    </div>
+                    
+                    <div>
+                        <h2 class="about__subtitle">Hi there 👋 I'm Ariel</h2>
+                        <p class="about__text">I’m a student from Mississauga, Ontario. <br> 
+                            I specialize in AI but I’m passionate about other emerging technologies such as IoT and edge computing. I spend a lot of time working on ML projects, tinkering with micro-controllers and doing some UX/UI design. In my spare time I love attending hackathons!</p>           
+                        <br>
+                        <a href="https://arielycliu.github.io/Resume/" target="_blank" class="button">Resume</a>
+                    </div>                                   
+                </div>
+            </section>
+
+            <!--===== SKILLS =====-->
+            <section class="skills section" id="skills">
+                <h2 class="section-title">SKILLSETS</h2>
+
+                <div class="skills__container bd-grid">          
+                    <div>
+                        <h2 class="skills__subtitle">My Toolkit</h2>
+                        <p class="skills__text"><span class="home__title-color"><b>Proficient in:</b></span> Python, C++, Keras, Tensorflow, and Microcontrollers</p>
+                        
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='uil uil-robot skills__icon'></i>
+                                <span class="skills__name">Keras</span>
+                            </div>
+                            <div class="skills__bar skills__keras">
+
+                            </div>
+                            <div>
+                                <span class="skills__percentage">80%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='uil uil-arrow skills__icon'></i>
+                                <span class="skills__name">Python</span>
+                            </div>
+                            <div class="skills__bar skills__python">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">92%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='uil uil-code-branch skills__icon' ></i>
+                                <span class="skills__name">Git</span>
+                            </div>
+                            <div class="skills__bar skills__git">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">65%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='uil uil-paint-tool skills__icon'></i>
+                                <span class="skills__name">UX/UI</span>
+                            </div>
+                            <div class="skills__bar skills__ux">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">75%</span>
                             </div>
                         </div>
                     </div>
-                </div>
-        </section>
-        <!--End Welcome Section-->
-
-
-        <!--MailChimp popup newsletter
-        <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us20.list-manage.com","uuid":"82a70b1b39480650a988fbccb","lid":"d0e7534fbd","uniqueMethods":true}) })</script>
-        <!--End MailChimp popup newsletter-->
-
-
-
-        <!--Start About Section-->
-        <section class="about section pp-scrollable" id="about">
-            <div class="about-header">
-                <div class="title-small"><p>ABOUT ME</p></div>
-            </div>
-            <div class="content-container">
-                <div class="display-table">
-                    <div class="display-content">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-lg-5 col-md-12">
-                                    <div class="about-img">
-                                        <img src="images/about.jpg" alt="" class="img-responsive">
-                                        <div class="img-hover"><a href="https://arielycliu.github.io/Resume/" target="_blank">  Read My Resume!</a></div>
-                                        <div class="img-overlay"></div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-7 col-md-12">
-                                    <div class="about-content">
-                                        <h4 class="section-title">
-                                            Hello! I am Ariel Liu
-                                        </h4>
-                                        <br>
-                                        <p class="about-text">
-                                            I’m a student from Mississauga, Ontario. <br>  <br> I specialize in AI but I’m passionate about other emerging technologies such as IoT and edge computing. I spend a lot of time working on ML projects, tinkering with micro-controllers and doing some UX/UI design. In my spare time I love attending hackathons!
-                                        </p>
-                                        <!--<div class="skills">
-                                            <div class="progressbar-area">
-                                                <h6>Python</h6>
-                                                <div class="progress">
-                                                    <div class="progress-bar prog1" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" data-progress="80%">
-                                                        <span>80%</span>
-                                                    </div>
-                                                </div>
-                                                <h6>Xaramin</h6>
-                                                <div class="progress">
-                                                    <div class="progress-bar prog2" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" data-progress="94%">
-
-                                                        <span>90%</span>
-                                                    </div>
-                                                </div>
-                                                <h6>SHIELS</h6>
-                                                <div class="progress">
-                                                    <div class="progress-bar prog3" role="progressbar" aria-valuenow="86" aria-valuemin="0" aria-valuemax="100" data-progress="86%">
-
-                                                        <span>86%</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>-->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    
+                    <div>              
+                        <img src="assets/img/Skills.png" alt="" class="skills__img">
                     </div>
                 </div>
-            </div>
-        </section>
-        <!--End About Section-->
+            </section>
 
-
-        <!--Start Services Section--> <!--
-        <section class="service section pp-scrollable" id="service">
-            <div class="content-container">
-                <div class="display-table">
-                    <div class="display-content">
-                        <div class="service-header">
-                            <div class="title-small"><p>MY SKILLS</p></div>
-                            <h4 class="section-title">What I Offer</h4>
-                        </div>
-                        <div class="service-content">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-lg-4 col-md-6 col-sm-12">
-                                        <div class="service-item">
-                                            <span><i class="fas fa-lightbulb"></i></span>
-                                            <p class="content-title">UNIQUE IDEAS</p>
-                                            <p class="content-text">. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6 col-sm-12">
-                                        <div class="service-item">
-                                            <span><i class="fas fa-pencil-ruler"></i></span>
-                                            <p class="content-title">UI/UX DESIGN</p>
-                                            <p class="content-text">. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6 col-sm-12">
-                                        <div class="service-item">
-                                            <span><i class="fas fa-laptop-code"></i></span>
-                                            <p class="content-title">APP DEVELOPMENT (XAMARIN)</p>
-                                            <p class="content-text">. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6 col-sm-12">
-                                        <div class="service-item">
-                                            <span><i class="fas fa-pen-nib"></i></span>
-                                            <p class="content-title">WEB DEVELOPMENT</p>
-                                            <p class="content-text">. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6 col-sm-12">
-                                        <div class="service-item">
-                                            <span><i class="fas fa-headphones"></i></span>
-                                            <p class="content-title">UNITY</p>
-                                            <p class="content-text">. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6 col-sm-12">
-                                        <div class="service-item">
-                                            <span><i class="fas fa-hammer"></i></span>
-                                            <p class="content-title">PYTORCH</p>
-                                            <p class="content-text">. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+            <!--===== PORTFOLIO =====-->
+            <section class="portfolio section" id="portfolio">
+                <h2 class="section-title">PORTFOLIO</h2>
+                
+                <ul>
+                    <li class="list active" data-filter="all">All</li>
+                    <li class="list" data-filter="articles">Articles</li>
+                    <li class="list" data-filter="newsletters">Newsletters</li>
+                    <li class="list" data-filter="projects">Projects</li>
+                    <li class="list" data-filter="design">Design</li>
+                </ul>
+                <div class="product bd-grid">
+                    <div class="itemBox articles projects">
+                        <a href="https://arielycliu.medium.com/classifying-food-with-computer-vision-a473249cf2f2" target="_blank">
+                            <img src="assets/img/portfolio/projects/food.png" alt="food ai article">
+                        </a>
+                    </div>
+                    <div class="itemBox articles">
+                        <a href="https://arielycliu.medium.com/preventing-fire-with-iot-a-simple-solution-c42853dde7fe" target="_blank">
+                            <img src="assets/img/portfolio/projects/temp.png" alt="temperature iot article">
+                        </a>
+                    </div>
+                    <div class="itemBox articles projects">
+                        <a href="https://medium.datadriveninvestor.com/identifying-covid-19-induced-pneumonia-with-ai-5ae7fb5ee97b" target="_blank">
+                            <img src="assets/img/portfolio/projects/covid.png" alt="covid ai article">
+                        </a>
+                    </div>
+                    <div class="itemBox articles">
+                        <a href="https://arielycliu.medium.com/get-alerted-when-your-plants-dying-d085d0bdedf5" target="_blank">
+                            <img src="assets/img/portfolio/projects/plant.png" alt="plant iot article">
+                        </a>
+                    </div>
+                    <div class="itemBox newsletters">
+                        <a href="https://mailchi.mp/0332b23633b1/april-newsletter" target="_blank">
+                            <img src="assets/img/portfolio/newsletters/april20.jpg" alt="April 2020 Newsletter">
+                        </a>
+                    </div>
+                    <div class="itemBox newsletters">
+                        <a href="https://mailchi.mp/52d140e3aaf0/may-newsletter" target="_blank">
+                            <img src="assets/img/portfolio/newsletters/may20.jpg" alt="May 2020 Newsletter">
+                        </a>
+                    </div>
+                    <div class="itemBox design">
+                        <a href="https://www.instagram.com/herdsocial/" target="_blank">
+                            <img src="assets/img/portfolio/design/herd.png" alt="Herd Social Media">
+                        </a>
                     </div>
                 </div>
-            </div>
-        </section>
-        <!--End Services Section-->
+            </section>
 
+            <!--===== CONTACT =====-->
+            <section class="contact section" id="contact">
+                <h2 class="section-title">GET IN TOUCH!</h2>
 
-        <!--Start Resume Section--> <!--
-        <section class="resume section pp-scrollable" id="resume">
-            <div class="content-container">
-                <div class="display-table">
-                    <div class="display-content">
-                        <div class="resume-header">
-                            <div class="title-small"><p>MY RESUME</p></div>
-                            <h4 class="section-title">My Resume</h4>
-                        </div>
-                        <div class="resume-content">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="education">
-                                            <div class="resume-item">
-                                                <p class="res-year">My Skills</p>
-                                                <p class="res-title">A quick overview</p>
-                                                <p>Python, HTML, CSS, Xamarin (app development, Android and iOS), PyTorch (Machine Learning), Firebase, Arduino, Raspberry Pi, 3D Printing </p>
-                                            </div>
-                                            <div class="resume-item">
-                                                <p class="res-year">2017-Present</p>
-                                                <p class="res-title">Robotics and programming Instructor at IRIS (Institute of Robotics & Intelligent Systems)</p>
-                                                <p>Instructed youth in robotics and various aspects of programming, to help generate an interest for computer science education in youth.</p>
-                                            </div>
-                                            <div class="resume-item">
-                                                <p class="res-year">2017-2022</p>
-                                                <p class="res-title">Student at The Woodlands Secondary School</p>
-                                                <p>Participating and representing the school at: Prefects, Computer Science Club, DECA, FRC Robotics, and the Archery club.</p>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="experience">
-                                            <div class="resume-item">
-                                                <p class="res-year">2018-Present</p>
-                                                <p class="res-title">FRC Robotics</p>
-                                                <p> Competing in the First Robotics Competition as a member of the team 4308 Absolute Robotics.</p>
-                                            </div>
-                                            <div class="resume-item">
-                                                <p class="res-year">2019-Present</p>
-                                                <p class="res-title">TKS (The Knowledge Society) Innovator</p>
-                                                <p>An accelerator program sending passionate and ambitious youth on their way to make an impact. </p>
-                                            </div>
-                                            <div class="resume-item">
-                                                <p class="res-year">2019-Present</p>
-                                                <p class="res-title">Event organizer and teen ambassador at CLC (Canada Learning Code)</p>
-                                                <p>Promoting digital literacy across the Canada. Through ensuring that all Canadians, especially minorities currently underrepresented, learn the skills needed to critical participants in the future of technology. </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="contact__container bd-grid">
+                    <form action="" class="contact__form">
+                        <input type="text" placeholder="Name" class="contact__input">
+                        <input type="mail" placeholder="Email" class="contact__input">
+                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
+                        <input type="button" value="Submit" class="contact__button button">
+                    </form>
                 </div>
+            </section>
+        </main>
+
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <p class="footer__title">Ariel Liu</p>
+            <div class="footer__social">
+                <a href="https://github.com/arielycliu" target="_blank" class="footer__icon"><i class='bx bxl-github' ></i></a>
+                <a href="https://medium.com/@arielycliu" target="_blank" class="footer__icon"><i class='bx bxl-medium' ></i></a>
+                <a href="https://www.linkedin.com/in/arielycliu/" target="_blank" class="footer__icon"><i class='bx bxl-linkedin' ></i></a>
             </div>
-        </section>
-        <!--End Resume Section-->
+            <p>✨ Welcome to my alcove on the internet</p>
+        </footer>
 
 
-        <!--Start Portfolio Section-->
-        <section class="portfolio section pp-scrollable" id="portfolio">
-            <div class="content-container">
-                <div class="display-table">
-                    <div class="display-content">
-                        <div class="portfolio-header">
-                            <div class="title-small"><p>SEE MY WORKS</p></div>
-                            <h4 class="section-title">Portfolio</h4>
-                        </div>
-                        <div class="portfolio-content">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-md-12 col-sm-12">
-                                        <div class="portfolio-content-head">
-                                            <ul class="controls">
-                                                <li class="filter" data-filter="all">ALL</li>
-                                                <li class="filter" data-filter=".articles">ARTICLES</li>
-                                                <li class="filter" data-filter=".projects">PROJECTS</li>
-                                                <li class="filter" data-filter=".newsletters">NEWSLETTERS</li>
-                                                <li class="filter" data-filter=".presentations">PRESENTATIONS</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12 col-sm-12">
-                                        <div class="portfolio-content-items">
-                                            <!--<div class="row">-->
-                                                <!--ARTICLE STARTTTT-->
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
 
-                                                <h4 class="section-title">Articles</h4>
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
+        <script
+			  src="https://code.jquery.com/jquery-3.6.0.js"
+			  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+			  crossorigin="anonymous"></script>
 
-                                            <div class="row">
-                                                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mix articles">
-                                                    <div class="portfolio-item">
-                                                        <div class="portfolio-img">
-                                                            <img src="images/portfolio/img1.jpg" alt="portfolio" class="img-responsive">
-                                                        </div>
-                                                        <div class="portfolio-overlay">
-                                                            <div class="overlay-content">
-                                                                <div class="overlay-content-item">
-                                                                    <p class="category">ARTICLES</p>
-                                                                    <a href="https://medium.com/@ariel.yc.liu/identifying-trumps-tweets-vs-hillary-s-with-neural-networks-4ed77dd230c6" target="_blank">
-                                                                        <div class="magnify-icon">
-                                                                            <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
-                                                                        </div>
-                                                                    </a>
-                                                                    <a href="images/portfolio/img1.jpg" data-lightbox="image-1">
-                                                                        <div class="magnify-icon">
-                                                                            <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
-                                                                        </div>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mix articles">
-                                                    <div class="portfolio-item">
-                                                        <div class="portfolio-img">
-                                                            <img src="images/portfolio/img5.jpg" alt="portfolio" class="img-responsive">
-                                                        </div>
-                                                        <div class="portfolio-overlay">
-                                                            <div class="overlay-content">
-                                                                <div class="overlay-content-item">
-                                                                    <p class="category">ARTICLES</p>
-                                                                    <a href="https://medium.com/@ariel.yc.liu/understanding-neural-networks-the-secret-lies-in-our-brains-5d8dc907ab34" target="_blank">
-                                                                        <div class="magnify-icon">
-                                                                            <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
-                                                                        </div>
-                                                                    </a>
-                                                                    <a href="images/portfolio/img5.jpg" data-lightbox="image-5">
-                                                                        <div class="magnify-icon">
-                                                                            <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
-                                                                        </div>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mix articles">
-                                                    <div class="portfolio-item">
-                                                        <div class="portfolio-img">
-                                                            <img src="images/portfolio/img6.jpg" alt="portfolio" class="img-responsive">
-                                                        </div>
-                                                        <div class="portfolio-overlay">
-                                                            <div class="overlay-content">
-                                                                <div class="overlay-content-item">
-                                                                    <p class="category">ARTICLES</p>
-                                                                    <a href="https://medium.com/dataseries/a-brief-introduction-to-machine-learning-aeb55dae2288" target="_blank">
-                                                                        <div class="magnify-icon">
-                                                                            <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
-                                                                        </div>
-                                                                    </a>
-                                                                    <a href="images/portfolio/img6.jpg" data-lightbox="image-6">
-                                                                        <div class="magnify-icon">
-                                                                            <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
-                                                                        </div>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mix articles">
-                                                    <div class="portfolio-item">
-                                                        <div class="portfolio-img">
-                                                            <img src="images/portfolio/img9.jpg" alt="portfolio" class="img-responsive">
-                                                        </div>
-                                                        <div class="portfolio-overlay">
-                                                            <div class="overlay-content">
-                                                                <div class="overlay-content-item">
-                                                                    <p class="category">ARTICLES</p>
-                                                                    <a href="https://medium.com/@ariel.yc.liu/playing-flappy-bird-with-ai-4b9b7802039f" target="_blank">
-                                                                        <div class="magnify-icon">
-                                                                            <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
-                                                                        </div>
-                                                                    </a>
-                                                                    <a href="images/portfolio/img9.jpg" data-lightbox="image-9">
-                                                                        <div class="magnify-icon">
-                                                                            <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
-                                                                        </div>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mix articles">
-                                                    <div class="portfolio-item">
-                                                        <div class="portfolio-img">
-                                                            <img src="images/portfolio/img12.jpg" alt="portfolio" class="img-responsive">
-                                                        </div>
-                                                        <div class="portfolio-overlay">
-                                                            <div class="overlay-content">
-                                                                <div class="overlay-content-item">
-                                                                    <p class="category">ARTICLES</p>
-                                                                    <a href="https://medium.com/@ariel.yc.liu/how-convolutional-neural-networks-learn-to-classify-images-d02ac860f5df" target="_blank">
-                                                                        <div class="magnify-icon">
-                                                                            <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
-                                                                        </div>
-                                                                    </a>
-                                                                    <a href="images/portfolio/img12.jpg" data-lightbox="image-12">
-                                                                        <div class="magnify-icon">
-                                                                            <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
-                                                                        </div>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mix articles">
-                                                    <div class="portfolio-item">
-                                                        <div class="portfolio-img">
-                                                            <img src="images/portfolio/img13.jpg" alt="portfolio" class="img-responsive">
-                                                        </div>
-                                                        <div class="portfolio-overlay">
-                                                            <div class="overlay-content">
-                                                                <div class="overlay-content-item">
-                                                                    <p class="category">ARTICLES</p>
-                                                                    <a href="https://medium.com/@ariel.yc.liu/teaching-ai-to-drive-using-cnns-d6126945f062" target="_blank">
-                                                                        <div class="magnify-icon">
-                                                                            <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
-                                                                        </div>
-                                                                    </a>
-                                                                    <a href="images/portfolio/img13.jpg" data-lightbox="image-13">
-                                                                        <div class="magnify-icon">
-                                                                            <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
-                                                                        </div>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mix articles">
-                                                    <div class="portfolio-item">
-                                                        <div class="portfolio-img">
-                                                            <img src="images/portfolio/covidA.jpg" alt="portfolio" class="img-responsive">
-                                                        </div>
-                                                        <div class="portfolio-overlay">
-                                                            <div class="overlay-content">
-                                                                <div class="overlay-content-item">
-                                                                    <p class="category">ARTICLES</p>
-                                                                    <a href="https://medium.com/datadriveninvestor/identifying-covid-19-induced-pneumonia-with-ai-5ae7fb5ee97b" target="_blank">
-                                                                        <div class="magnify-icon">
-                                                                            <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
-                                                                        </div>
-                                                                    </a>
-                                                                    <a href="images/portfolio/covidA.jpg" data-lightbox="covidA">
-                                                                        <div class="magnify-icon">
-                                                                            <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
-                                                                        </div>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mix articles">
-                                                    <div class="portfolio-item">
-                                                        <div class="portfolio-img">
-                                                            <img src="images/portfolio/IoTGuide.jpg" alt="portfolio" class="img-responsive">
-                                                        </div>
-                                                        <div class="portfolio-overlay">
-                                                            <div class="overlay-content">
-                                                                <div class="overlay-content-item">
-                                                                    <p class="category">ARTICLES</p>
-                                                                    <a href="https://medium.com/@ariel.yc.liu/a-guide-to-iot-all-you-need-to-know-eb916c290376" target="_blank">
-                                                                        <div class="magnify-icon">
-                                                                            <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
-                                                                        </div>
-                                                                    </a>
-                                                                    <a href="images/portfolio/IoTGuide.jpg" data-lightbox="IoTGuide">
-                                                                        <div class="magnify-icon">
-                                                                            <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
-                                                                        </div>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mix articles">
-                                                    <div class="portfolio-item">
-                                                        <div class="portfolio-img">
-                                                            <img src="images/portfolio/IoTtempA.jpg" alt="portfolio" class="img-responsive">
-                                                        </div>
-                                                        <div class="portfolio-overlay">
-                                                            <div class="overlay-content">
-                                                                <div class="overlay-content-item">
-                                                                    <p class="category">ARTICLES</p>
-                                                                    <a href="https://medium.com/@ariel.yc.liu/preventing-fire-with-iot-a-simple-solution-c42853dde7fe" target="_blank">
-                                                                        <div class="magnify-icon">
-                                                                            <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
-                                                                        </div>
-                                                                    </a>
-                                                                    <a href="images/portfolio/IoTtempA.jpg" data-lightbox="IoTtempA">
-                                                                        <div class="magnify-icon">
-                                                                            <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
-                                                                        </div>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
+        <!-- filter text portfolio js -->
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('.list').click(function(){
+                    const value = $(this).attr('data-filter');
+                    if (value == 'all'){
+                        $('.itemBox').show('100');
+                    }
+                    else {
+                        $('.itemBox').not('.'+ value).hide('100');
+                        $('.itemBox').filter('.'+ value).show('100');
+                    }
+                })
+                // active on selected item
+                $('.list').click(function(){
+                    $(this).addClass('active').siblings().removeClass('active');
 
-                                                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mix articles">
-                                                    <div class="portfolio-item">
-                                                        <div class="portfolio-img">
-                                                            <img src="images/portfolio/IoTplantA.jpg" alt="portfolio" class="img-responsive">
-                                                        </div>
-                                                        <div class="portfolio-overlay">
-                                                            <div class="overlay-content">
-                                                                <div class="overlay-content-item">
-                                                                    <p class="category">ARTICLES</p>
-                                                                    <a href="https://medium.com/@ariel.yc.liu/get-alerted-when-your-plants-dying-d085d0bdedf5?sk=4a54de8c1783c9dc75b790a43b519877" target="_blank">
-                                                                        <div class="magnify-icon">
-                                                                            <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
-                                                                        </div>
-                                                                    </a>
-                                                                    <a href="images/portfolio/IoTplantA.jpg" data-lightbox="IoTplantA">
-                                                                        <div class="magnify-icon">
-                                                                            <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
-                                                                        </div>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                })
+            })
+        </script>
 
-                                                <!--ARTICLE ENDDDDDDDDDD-->
-                                                </div>
-
-
-                                                <!--PROJECT STARTTT-->
-                                                <br>
-                                                <h4 class="section-title">Projects</h4>
-                                             <div class="row">
-                                                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mix projects">
-                                                    <div class="portfolio-item">
-                                                        <div class="portfolio-img">
-                                                            <img src="images/portfolio/img2.jpg" alt="trump project" class="img-responsive">
-                                                        </div>
-                                                        <div class="portfolio-overlay">
-                                                            <div class="overlay-content">
-                                                                <div class="overlay-content-item">
-                                                                    <p class="category">PROJECTS</p>
-                                                                    <a href="http://liuariel.com/tweet_analysis.html" target="_blank">
-                                                                        <div class="magnify-icon">
-                                                                            <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
-                                                                        </div>
-                                                                    </a>
-                                                                    <a href="images/portfolio/img2.jpg" data-lightbox="image-2">
-                                                                        <div class="magnify-icon">
-                                                                            <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
-                                                                        </div>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mix projects">
-                                                    <div class="portfolio-item">
-                                                        <div class="portfolio-img">
-                                                            <img src="images/portfolio/img11.jpg" alt="flappy_project" class="img-responsive">
-                                                        </div>
-                                                        <div class="portfolio-overlay">
-                                                            <div class="overlay-content">
-                                                                <div class="overlay-content-item">
-                                                                    <p class="category">PROJECTS</p>
-                                                                    <a href="http://liuariel.com/flappybird_cnn.html" target="_blank">
-                                                                        <div class="magnify-icon">
-                                                                            <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
-                                                                        </div>
-                                                                    </a>
-                                                                    <a href="images/portfolio/img11.jpg" data-lightbox="image-11">
-                                                                        <div class="magnify-icon">
-                                                                            <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
-                                                                        </div>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mix projects">
-                                                    <div class="portfolio-item">
-                                                        <div class="portfolio-img">
-                                                            <img src="images/portfolio/img14.jpg" alt="cnn project" class="img-responsive">
-                                                        </div>
-                                                        <div class="portfolio-overlay">
-                                                            <div class="overlay-content">
-                                                                <div class="overlay-content-item">
-                                                                    <p class="category">PROJECTS</p>
-                                                                    <a href="http://liuariel.com/CNN_driving.html" target="_blank">
-                                                                        <div class="magnify-icon">
-                                                                            <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
-                                                                        </div>
-                                                                    </a>
-                                                                    <a href="images/portfolio/img14.jpg" data-lightbox="image-14">
-                                                                        <div class="magnify-icon">
-                                                                            <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
-                                                                        </div>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mix projects">
-                                                    <div class="portfolio-item">
-                                                        <div class="portfolio-img">
-                                                            <img src="images/portfolio/covidP.jpg" alt="covid project" class="img-responsive">
-                                                        </div>
-                                                        <div class="portfolio-overlay">
-                                                            <div class="overlay-content">
-                                                                <div class="overlay-content-item">
-                                                                    <p class="category">PROJECTS</p>
-                                                                    <a href="http://liuariel.com/Covid_scan.html" target="_blank">
-                                                                        <div class="magnify-icon">
-                                                                            <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
-                                                                        </div>
-                                                                    </a>
-                                                                    <a href="images/portfolio/covidP.jpg" data-lightbox="covidP">
-                                                                        <div class="magnify-icon">
-                                                                            <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
-                                                                        </div>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mix projects">
-                                                    <div class="portfolio-item">
-                                                        <div class="portfolio-img">
-                                                            <img src="images/portfolio/IoTtempP.jpg" alt="iot temp project" class="img-responsive">
-                                                        </div>
-                                                        <div class="portfolio-overlay">
-                                                            <div class="overlay-content">
-                                                                <div class="overlay-content-item">
-                                                                    <p class="category">PROJECTS</p>
-                                                                    <a href="http://liuariel.com/IoT_temp.html" target="_blank">
-                                                                        <div class="magnify-icon">
-                                                                            <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
-                                                                        </div>
-                                                                    </a>
-                                                                    <a href="images/portfolio/IoTtempP.jpg" data-lightbox="IoTtempP">
-                                                                        <div class="magnify-icon">
-                                                                            <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
-                                                                        </div>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mix projects">
-                                                    <div class="portfolio-item">
-                                                        <div class="portfolio-img">
-                                                            <img src="images/portfolio/IoTplantP.jpg" alt="iot plant project" class="img-responsive">
-                                                        </div>
-                                                        <div class="portfolio-overlay">
-                                                            <div class="overlay-content">
-                                                                <div class="overlay-content-item">
-                                                                    <p class="category">PROJECTS</p>
-                                                                    <a href="http://liuariel.com/IoT_plant.html" target="_blank">
-                                                                        <div class="magnify-icon">
-                                                                            <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
-                                                                        </div>
-                                                                    </a>
-                                                                    <a href="images/portfolio/IoTplantP.jpg" data-lightbox="IoTplantP">
-                                                                        <div class="magnify-icon">
-                                                                            <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
-                                                                        </div>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!--PROJECT ENDD-->
-                                            </div>
-
-
-                                                <!--NEWSLETTERS STARTTT-->
-                                                <br>
-                                                <h4 class="section-title">Newsletters</h4>
-                                             <div class="row">
-                                                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mix newsletters">
-                                                    <div class="portfolio-item">
-                                                        <div class="portfolio-img">
-                                                            <img src="images/portfolio/img18.jpg" alt="portfolio" class="img-responsive">
-                                                        </div>
-                                                        <div class="portfolio-overlay">
-                                                            <div class="overlay-content">
-                                                                <div class="overlay-content-item">
-                                                                    <p class="category">NEWSLETTERS</p>
-                                                                    <a href="https://mailchi.mp/d289773e3678/february-newsletter" target="_blank">
-                                                                        <div class="magnify-icon">
-                                                                            <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
-                                                                        </div>
-                                                                    </a>
-                                                                    <a href="images/portfolio/img18.jpg" data-lightbox="image-18">
-                                                                        <div class="magnify-icon">
-                                                                            <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
-                                                                        </div>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mix newsletters">
-                                                    <div class="portfolio-item">
-                                                        <div class="portfolio-img">
-                                                            <img src="images/portfolio/img15.jpg" alt="portfolio" class="img-responsive">
-                                                        </div>
-                                                        <div class="portfolio-overlay">
-                                                            <div class="overlay-content">
-                                                                <div class="overlay-content-item">
-                                                                    <p class="category">NEWSLETTERS</p>
-                                                                    <a href="https://mailchi.mp/be0eec973bc9/january-newsletter-2" target="_blank">
-                                                                        <div class="magnify-icon">
-                                                                            <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
-                                                                        </div>
-                                                                    </a>
-                                                                    <a href="images/portfolio/img15.jpg" data-lightbox="image-15">
-                                                                        <div class="magnify-icon">
-                                                                            <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
-                                                                        </div>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mix newsletters">
-                                                    <div class="portfolio-item">
-                                                        <div class="portfolio-img">
-                                                            <img src="images/portfolio/img10.jpg" alt="portfolio" class="img-responsive">
-                                                        </div>
-                                                        <div class="portfolio-overlay">
-                                                            <div class="overlay-content">
-                                                                <div class="overlay-content-item">
-                                                                    <p class="category">NEWSLETTERS</p>
-                                                                    <a href="https://mailchi.mp/089cb5609f01/december-newsletter" target="_blank">
-                                                                        <div class="magnify-icon">
-                                                                            <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
-                                                                        </div>
-                                                                    </a>
-                                                                    <a href="images/portfolio/img10.jpg" data-lightbox="image-10">
-                                                                        <div class="magnify-icon">
-                                                                            <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
-                                                                        </div>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mix newsletters">
-                                                    <div class="portfolio-item">
-                                                        <div class="portfolio-img">
-                                                            <img src="images/portfolio/img8.jpg" alt="november newsletter" class="img-responsive">
-                                                        </div>
-                                                        <div class="portfolio-overlay">
-                                                            <div class="overlay-content">
-                                                                <div class="overlay-content-item">
-                                                                    <p class="category">NEWSLETTERS</p>
-                                                                    <a href="https://mailchi.mp/875605f103ee/november-newsletter-12076109" target="_blank">
-                                                                        <div class="magnify-icon">
-                                                                            <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
-                                                                        </div>
-                                                                    </a>
-                                                                    <a href="images/portfolio/img8.jpg" data-lightbox="image-8">
-                                                                        <div class="magnify-icon">
-                                                                            <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
-                                                                        </div>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mix newsletters">
-                                                    <div class="portfolio-item">
-                                                        <div class="portfolio-img">
-                                                            <img src="images/portfolio/img7.jpg" alt="october newsletter" class="img-responsive">
-                                                        </div>
-                                                        <div class="portfolio-overlay">
-                                                            <div class="overlay-content">
-                                                                <div class="overlay-content-item">
-                                                                    <p class="category">NEWSLETTERS</p>
-                                                                    <a href="https://mailchi.mp/032787b5593c/october-newsletter" target="_blank">
-                                                                        <div class="magnify-icon">
-                                                                            <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
-                                                                        </div>
-                                                                    </a>
-                                                                    <a href="images/portfolio/img7.jpg" data-lightbox="image-7">
-                                                                        <div class="magnify-icon">
-                                                                            <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
-                                                                        </div>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mix newsletters">
-                                                    <div class="portfolio-item">
-                                                        <div class="portfolio-img">
-                                                            <img src="images/portfolio/img3.jpg" alt="portfolio" class="img-responsive">
-                                                        </div>
-                                                        <div class="portfolio-overlay">
-                                                            <div class="overlay-content">
-                                                                <div class="overlay-content-item">
-                                                                    <p class="category">NEWSLETTERS</p>
-                                                                    <a href="https://mailchi.mp/929cce6b6e5c/september-newsletter" target="_blank">
-                                                                        <div class="magnify-icon">
-                                                                            <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
-                                                                        </div>
-                                                                    </a>
-                                                                    <a href="images/portfolio/img3.jpg" data-lightbox="image-3">
-                                                                        <div class="magnify-icon">
-                                                                            <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
-                                                                        </div>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mix newsletters">
-                                                    <div class="portfolio-item">
-                                                        <div class="portfolio-img">
-                                                            <img src="images/portfolio/march20.jpg" alt="portfolio" class="img-responsive">
-                                                        </div>
-                                                        <div class="portfolio-overlay">
-                                                            <div class="overlay-content">
-                                                                <div class="overlay-content-item">
-                                                                    <p class="category">NEWSLETTERS</p>
-                                                                    <a href="https://mailchi.mp/3182ec4b74ff/march-newsletter" target="_blank">
-                                                                        <div class="magnify-icon">
-                                                                            <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
-                                                                        </div>
-                                                                    </a>
-                                                                    <a href="images/portfolio/march20.jpg" data-lightbox="march20">
-                                                                        <div class="magnify-icon">
-                                                                            <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
-                                                                        </div>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mix newsletters">
-                                                    <div class="portfolio-item">
-                                                        <div class="portfolio-img">
-                                                            <img src="images/portfolio/april20.jpg" alt="portfolio" class="img-responsive">
-                                                        </div>
-                                                        <div class="portfolio-overlay">
-                                                            <div class="overlay-content">
-                                                                <div class="overlay-content-item">
-                                                                    <p class="category">NEWSLETTERS</p>
-                                                                    <a href="https://mailchi.mp/0332b23633b1/april-newsletter" target="_blank">
-                                                                        <div class="magnify-icon">
-                                                                            <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
-                                                                        </div>
-                                                                    </a>
-                                                                    <a href="images/portfolio/april20.jpg" data-lightbox="april20">
-                                                                        <div class="magnify-icon">
-                                                                            <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
-                                                                        </div>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mix newsletters">
-                                                    <div class="portfolio-item">
-                                                        <div class="portfolio-img">
-                                                            <img src="images/portfolio/may20.jpg" alt="portfolio" class="img-responsive">
-                                                        </div>
-                                                        <div class="portfolio-overlay">
-                                                            <div class="overlay-content">
-                                                                <div class="overlay-content-item">
-                                                                    <p class="category">NEWSLETTERS</p>
-                                                                    <a href="https://mailchi.mp/52d140e3aaf0/may-newsletter" target="_blank">
-                                                                        <div class="magnify-icon">
-                                                                            <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
-                                                                        </div>
-                                                                    </a>
-                                                                    <a href="images/portfolio/may20.jpg" data-lightbox="may20">
-                                                                        <div class="magnify-icon">
-                                                                            <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
-                                                                        </div>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!--NEWSLETTERS ENDDDDD-->
-                                            </div>
-
-                                            <!--VIDEO STARTTTTT-->
-                                                <br>
-                                                <h4 class="section-title presentations">Presentations</h4>
-                                             <div class="row">
-                                                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mix presentations">
-                                                    <div class="portfolio-item">
-                                                        <div class="portfolio-img">
-                                                            <img src="images/portfolio/img4.jpg" alt="portfolio" class="img-responsive">
-                                                        </div>
-                                                        <div class="portfolio-overlay">
-                                                            <div class="overlay-content">
-                                                                <div class="overlay-content-item">
-                                                                    <p class="category">PRESENTATIONS</p>
-                                                                    <a href="https://www.youtube.com/watch?v=_Y4BsA8Kgto" target="_blank">
-                                                                        <div class="magnify-icon">
-                                                                            <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
-                                                                        </div>
-                                                                    </a>
-                                                                    <a href="images/portfolio/img4.jpg" data-lightbox="image-4">
-                                                                        <div class="magnify-icon">
-                                                                            <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
-                                                                        </div>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mix presentations">
-                                                    <div class="portfolio-item">
-                                                        <div class="portfolio-img">
-                                                            <img src="images/portfolio/img16.jpg" alt="portfolio" class="img-responsive">
-                                                        </div>
-                                                        <div class="portfolio-overlay">
-                                                            <div class="overlay-content">
-                                                                <div class="overlay-content-item">
-                                                                    <p class="category">PRESENTATIONS</p>
-                                                                    <a href="https://www.youtube.com/watch?v=uwUjzNVlauQ&feature=youtu.be" target="_blank">
-                                                                        <div class="magnify-icon">
-                                                                            <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
-                                                                        </div>
-                                                                    </a>
-                                                                    <a href="images/portfolio/img16.jpg" data-lightbox="image-16">
-                                                                        <div class="magnify-icon">
-                                                                            <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
-                                                                        </div>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mix presentations">
-                                                    <div class="portfolio-item">
-                                                        <div class="portfolio-img">
-                                                            <img src="images/portfolio/img17.jpg" alt="portfolio" class="img-responsive">
-                                                        </div>
-                                                        <div class="portfolio-overlay">
-                                                            <div class="overlay-content">
-                                                                <div class="overlay-content-item">
-                                                                    <p class="category">PRESENTATIONS</p>
-                                                                    <a href="https://www.youtube.com/watch?v=60mWw-Y_y-k" target="_blank">
-                                                                        <div class="magnify-icon">
-                                                                            <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
-                                                                        </div>
-                                                                    </a>
-                                                                    <a href="images/portfolio/img17.jpg" data-lightbox="image-17">
-                                                                        <div class="magnify-icon">
-                                                                            <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
-                                                                        </div>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mix presentations">
-                                                    <div class="portfolio-item">
-                                                        <div class="portfolio-img">
-                                                            <img src="images/portfolio/covidV.jpg" alt="portfolio" class="img-responsive">
-                                                        </div>
-                                                        <div class="portfolio-overlay">
-                                                            <div class="overlay-content">
-                                                                <div class="overlay-content-item">
-                                                                    <p class="category">PRESENTATIONS</p>
-                                                                    <a href="https://youtu.be/MOuGqtsy0F4" target="_blank">
-                                                                        <div class="magnify-icon">
-                                                                            <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
-                                                                        </div>
-                                                                    </a>
-                                                                    <a href="images/portfolio/covidV.jpg" data-lightbox="covidV">
-                                                                        <div class="magnify-icon">
-                                                                            <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
-                                                                        </div>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mix presentations">
-                                                    <div class="portfolio-item">
-                                                        <div class="portfolio-img">
-                                                            <img src="images/portfolio/IoTtempV.jpg" alt="portfolio" class="img-responsive">
-                                                        </div>
-                                                        <div class="portfolio-overlay">
-                                                            <div class="overlay-content">
-                                                                <div class="overlay-content-item">
-                                                                    <p class="category">PRESENTATIONS</p>
-                                                                    <a href="https://www.youtube.com/watch?v=8l2ytU1dPYI" target="_blank">
-                                                                        <div class="magnify-icon">
-                                                                            <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
-                                                                        </div>
-                                                                    </a>
-                                                                    <a href="images/portfolio/IoTtempV.jpg" data-lightbox="IoTtempV">
-                                                                        <div class="magnify-icon">
-                                                                            <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
-                                                                        </div>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mix presentations">
-                                                    <div class="portfolio-item">
-                                                        <div class="portfolio-img">
-                                                            <img src="images/portfolio/IoTplantV.jpg" alt="portfolio" class="img-responsive">
-                                                        </div>
-                                                        <div class="portfolio-overlay">
-                                                            <div class="overlay-content">
-                                                                <div class="overlay-content-item">
-                                                                    <p class="category">PRESENTATIONS</p>
-                                                                    <a href="#########" target="_blank">
-                                                                        <div class="magnify-icon">
-                                                                            <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
-                                                                        </div>
-                                                                    </a>
-                                                                    <a href="images/portfolio/IoTplantV.jpg" data-lightbox="IoTplantV">
-                                                                        <div class="magnify-icon">
-                                                                            <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
-                                                                        </div>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!--VIDEO ENDDDDD-->
-
-
-                                                <!--</div>-->
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--End Portfolio Section-->
-
-        <!--Start work Section--> <!--
-        <section class="work section pp-scrollable" id="work">
-            <div class="content-container">
-                <div class="display-table">
-                    <div class="display-content">
-                        <div class="work-header">
-                            <div class="title-small"><p>WORKING PROCESS</p></div>
-                            <h4 class="section-title">How I Work</h4>
-                        </div>
-                        <div class="work-content">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="video-container">
-                                            <div class="video-area">
-                                                <a href="https://www.youtube.com/watch?v=EfTUpvxEbqc" class="video-play button" target="_self">
-                                                    <div class="video-icon"><span><i class="fas fa-caret-right"></i></span></div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="work-item">
-                                            <span class="work-title">Discuss &amp; Plan</span>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor</p>
-                                        </div>
-                                        <div class="work-arrow"></div>
-                                        <div class="work-item">
-                                            <span class="work-title">Design &amp; Develop</span>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor</p>
-                                        </div>
-                                        <div class="work-arrow"></div>
-                                        <div class="work-item">
-                                            <span class="work-title">Be Sleep Deprived</span>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
-        <!--End work Section-->
-
-        <!--Start Client Testimonial Section Area-->
-        <!--
-        <section class="client-testimonial pp-scrollable section" id="client-testimonial">
-            <div class="content-container">
-                <div class="display-table">
-                    <div class="display-content">
-                        <div class="testimonial-header">
-                            <div class="title-small"><p>TESTIMONIAL</p></div>
-                            <h4 class="section-title">What People Say</h4>
-                        </div>
-                        <div class="client-area">
-                            <div class="container">
-                                <div class="row">
-                                    <div id="owl-demo-testimonial" class="owl-carousel owl-theme">
-                                        <!--Start Client Single design area-->
-                                        <!--<div class="item">
-                                            <div class="client-img">
-                                                <img src="images/client/img1.jpg" alt="client">
-                                            </div>
-                                            <div class="testimonial-content">
-                                                <div class="quote-text">
-                                                    <p>
-                                                        <i class="fa fa-quote-left" aria-hidden="true"></i>
-                                                        <span>Facilisis eu iaculis suspendisse congue auctor parturient consectetur nec gravida parturient.</span>
-                                                        <i class="fa fa-quote-right" aria-hidden="true"></i>
-                                                    </p>
-                                                    <div class="client-identity">
-                                                        <p class="name">SHIELS SHIELS</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!--End Client Single design area-->
-                                        <!--Start Client Single design area--> <!--
-                                        <div class="item">
-                                            <div class="client-img">
-                                                <img src="images/client/img2.jpg" alt="client">
-                                            </div>
-                                            <div class="testimonial-content">
-                                                <div class="quote-text">
-                                                    <p>
-                                                        <i class="fa fa-quote-left" aria-hidden="true"></i>
-                                                        <span>Facilisis eu iaculis suspendisse congue auctor parturient consectetur nec gravida parturient.</span>
-                                                        <i class="fa fa-quote-right" aria-hidden="true"></i>
-                                                    </p>
-                                                    <div class="client-identity">
-                                                        <p class="name">RYAN  SHIELS</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!--End Client Single design area-->
-                                        <!--Start Client Single design area--> <!--
-                                        <div class="item">
-                                            <div class="client-img">
-                                                <img src="images/client/img3.jpg" alt="client">
-                                            </div>
-                                            <div class="testimonial-content">
-                                                <div class="quote-text">
-                                                    <p>
-                                                        <i class="fa fa-quote-left" aria-hidden="true"></i>
-                                                        <span>Facilisis eu iaculis suspendisse congue auctor parturient consectetur nec gravida parturient.</span>
-                                                        <i class="fa fa-quote-right" aria-hidden="true"></i>
-                                                    </p>
-                                                    <div class="client-identity">
-                                                        <p class="name">SILVIA SHIELS</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!--End Client Single design area-->
-                                        <!--Start Client Single design area--> <!--
-                                        <div class="item">
-                                            <div class="client-img">
-                                                <img src="images/client/img1.jpg" alt="client">
-                                            </div>
-                                            <div class="testimonial-content">
-                                                <div class="quote-text">
-                                                    <p>
-                                                        <i class="fa fa-quote-left" aria-hidden="true"></i>
-                                                        <span>Facilisis eu iaculis suspendisse congue auctor parturient consectetur nec gravida parturient.</span>
-                                                        <i class="fa fa-quote-right" aria-hidden="true"></i>
-                                                    </p>
-                                                    <div class="client-identity">
-                                                        <p class="name">OLIVIA SHIELS</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!--End Client Single design area-->
-                                        <!--Start Client Single design area--> <!--
-                                        <div class="item">
-                                            <div class="client-img">
-                                                <img src="images/client/img2.jpg" alt="client">
-                                            </div>
-                                            <div class="testimonial-content">
-                                                <div class="quote-text">
-                                                    <p>
-                                                        <i class="fa fa-quote-left" aria-hidden="true"></i>
-                                                        <span>Facilisis eu iaculis suspendisse congue auctor parturient consectetur nec gravida parturient.</span>
-                                                        <i class="fa fa-quote-right" aria-hidden="true"></i>
-                                                    </p>
-                                                    <div class="client-identity">
-                                                        <p class="name">JOHN SHIELS</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!--End Client Single design area-->
-                                        <!--Start Client Single design area--> <!--
-                                        <div class="item">
-                                            <div class="client-img">
-                                                <img src="images/client/img3.jpg" alt="client">
-                                            </div>
-                                            <div class="testimonial-content">
-                                                <div class="quote-text">
-                                                    <p>
-                                                        <i class="fa fa-quote-left" aria-hidden="true"></i>
-                                                        <span>Facilisis eu iaculis suspendisse congue auctor parturient consectetur nec gravida parturient.</span>
-                                                        <i class="fa fa-quote-right" aria-hidden="true"></i>
-                                                    </p>
-                                                    <div class="client-identity">
-                                                        <p class="name">SILVIA SHIELS</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!--End Client Single design area--> <!--
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        -->
-        <!--End Client Testimonial Section Area-->
-
-
-        <!--Start Blog Section Area--> <!--
-        <section class="blog pp-scrollable section" id="blog">
-            <div class="content-container">
-                <div class="display-table">
-                    <div class="display-content">
-                        <div class="blog-header">
-                            <div class="title-small"><p>SEE MY BLOG</p></div>
-                            <h4 class="section-title">Latest News</h4>
-                        </div>
-                        <div class="blog-content">
-                            <div class="container">
-                                <div class="owl-carousel owl-theme" id="owl-demo-blog">
-                                    <div class="item row">
-                                        <div class="col-lg-6 col-md-12">
-                                            <div class="blog-img">
-                                                <img src="images/blog/blog-img1.jpg" alt="blog1" class="img-responsive">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6 col-md-12">
-                                            <div class="blog-text">
-                                                <p class="blog-title">Single Blog Post Title Goes Here</p>
-                                                <p class="blog-detail">
-                                                    <span>Date:</span>01-03-19
-                                                    <span>|</span> Posted By <span>Carl Shiels</span>
-                                                </p>
-                                                <p class="blog-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia ...
-                                                </p>
-                                                <a href="#" class="read-more">Read More <i class='fas fa-angle-double-right'></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="item row">
-                                        <div class="col-lg-6 col-md-12">
-                                            <div class="blog-img">
-                                                <img src="images/blog/blog-img2.jpg" alt="blog2" class="img-responsive">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6 col-md-12">
-                                            <div class="blog-text">
-                                                <p class="blog-title">Single Blog Post Title Goes Here</p>
-                                                <p class="blog-detail">
-                                                    <span>Date:</span>01-03-19
-                                                    <span>|</span> Posted By <span>Carl Shiels</span>
-                                                </p>
-                                                <p class="blog-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia ...
-                                                </p>
-                                                <a href="#" class="read-more">Read More <i class='fas fa-angle-double-right'></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="item row">
-                                        <div class="col-lg-6 col-md-12">
-                                            <div class="blog-img">
-                                                <img src="images/blog/blog-img3.jpg" alt="blog3" class="img-responsive">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6 col-md-12">
-                                            <div class="blog-text">
-                                                <p class="blog-title">Single Blog Post Title Goes Here</p>
-                                                <p class="blog-detail">
-                                                    <span>Date:</span>01-03-19
-                                                    <span>|</span> Posted By <span>Carl Shiels</span>
-                                                </p>
-                                                <p class="blog-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia ...
-                                                </p>
-                                                <a href="#" class="read-more">Read More <i class='fas fa-angle-double-right'></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--End Blog Section Area-->
-
-
-        <!--Start Contact Section-->
-        <section class="contact footer pp-scrollable section" id="contact">
-            <div class="content-container">
-                <div class="display-table">
-                    <div class="display-content">
-                        <div class="contact-header">
-                            <div class="title-small"><p>CONTACT ME</p></div>
-                            <h4 class="section-title">Get In Touch</h4>
-                        </div>
-                        <div class="contact-content">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-lg-6 col-md-12 col-sm-12">
-                                        <div class="contact-detail">
-                                            <h6>Contact</h6>
-                                            <p class="contact-text">Want to learn more or get it touch? Send me an email!                          </p>
-                                            <!--<p class="adress">
-                                                <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                                <span>Address:</span>
-                                                <span class="adress-loc">10,Park,Toronto,ON.</span>
-                                            </p>
-                                            <p class="phone">
-                                                <i class="fa fa-phone" aria-hidden="true"></i>
-                                                <span>Contact no:</span>+999000000
-                                            </p> -->
-                                            <p class="email">
-                                                <i class="fas fa-envelope" aria-hidden="true"></i>
-                                                <span>Email:</span><a href="mailto:ariel.yc.liu@gmail.com"> ariel.yc.liu@gmail.com</a>
-                                            </p>
-                                            <p>
-                                                <i class="fa fa-globe" aria-hidden="true"></i>
-                                                <span>Website:</span><a href="https://arielycliu.github.io"> arielycliu.github.io</a>
-                                            </p>
-                                            <div class="social-icons">
-                                                <p>Find Me at:</p>
-                                                <!-- <a href="https://www.facebook.com/ariel.liu.56808"><i class="fab fa-facebook-f"></i></a> -->
-                                                <!--<a href="#"><i class="fab fa-twitter"></i></a> -->
-                                                <a href="https://github.com/arielycliu"><i class="fab fa-github"></i></a>
-                                                <a href="https://medium.com/@arielycliu"><i class="fab fa-medium"></i></a>
-                                                <a href="https://www.linkedin.com/in/arielycliu/"><i class="fab fa-linkedin-in"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6 col-md-12 col-sm-12">
-                                        <div class="contact-form">
-                                            <form class="contact-form-area" action="contact.php" method="post">
-                                                <div class="row">
-                                                    <div class="col-md-6">
-                                                        <input type="text" name="name" placeholder="Name" id="form-name">
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <input type="text" name="email" placeholder="Email" id="form-email">
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-md-12">
-                                                        <input type="text" name="subject" placeholder="Subject" id="form-subject">
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-md-12">
-                                                        <textarea placeholder="Type here" name="message" id="form-message"></textarea>
-                                                        <input type="submit" class="submit-btn btn-style1 clearfix" value="Submit" id="contact-submit">
-                                                        <div class="result"></div>
-                                                    </div>
-                                                </div>
-                                            </form>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--Start Footer-->
-                        <footer>
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="copyright">
-                                            <p>Copyright © 2019 Ariel Liu | All rights reserved</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </footer>
-                        <!--End Footer-->
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--End Contact Section-->
-
-
-    </div>
-    <!--javascript-->
-    <script src="js/jquery.min.js "></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/owl.carousel.min.js "></script>
-    <script src="js/jquery.waypoints.min.js "></script>
-    <script src="js/jquery.ajaxchimp.min.js "></script>
-    <script src="js/lightbox.js "></script>
-    <script src="js/typed.min.js "></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/mixitup.min.js "></script>
-    <script src="js/animatedModal.min.js"></script>
-    <script src="js/jquery.pagepiling.min.js"></script>
-    <script src="js/jquery.singlePageNav.min.js "></script>
-    <script src="js/particles.min.js"></script>
-<script src="js/app-particle.js"></script>
-    <script src="js/main.js"></script>
-</body>
+    </body>
+</html>
