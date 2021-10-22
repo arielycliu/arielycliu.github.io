@@ -36,8 +36,8 @@
 
 /*########### Margins ###########*/
 :root{
-  --mb-1: 0.5rem;
-  --mb-2: 1rem;
+  --mb-1: 0.5em;
+  --mb-2: 1em;
   --mb-3: 1.5rem;
   --mb-4: 2rem;
   --mb-5: 2.5rem;
@@ -112,7 +112,7 @@ img{
   left: 0;
   right: 0;
   margin: auto;
-  top: 2rem;
+  top: 1.2em;
   background-color: var(--first-color);
 }
 .section{

@@ -1,3 +1,9 @@
+
+// function for submitting form notice
+function SubmittedFormAlert(){
+    alert("Thank you for your interest! I'll get back to you asap 🎉");
+}
+
 /*########### MENU SHOW ###########*/ 
 const showMenu = (toggleId, navId) =>{
     const toggle = document.getElementById(toggleId),
