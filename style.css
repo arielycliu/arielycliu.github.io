@@ -1,0 +1,596 @@
+/* Import fonts */
+/*Source Code Pro and Oxygen*/
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+/* Color variables */
+:root {
+    --black: #111;
+    --lightgrey: #F6F6F6;
+    --grey: #5e5e5e;
+    --lightlightpink: #FFF2ED;
+    --lightpink: #FFE0D6;
+    --medpink: #ffd3c4;
+    --darkpink: #ffaf94;
+    --darkdarkpink: #ff5454;
+
+    --logo: 1.5em;
+    --titletextsize: 3.4em;
+    --headertextsize: 2.2em;
+    --headerbodytextsize: 1.2em;
+    --subsectionheadertextsize: 1.1em;
+    --bodytextsize: 1em;
+
+    --skillsetstextsize: 0.9em;
+    --experiencetextsize: 0.9em;
+    --pleasurestextsize: 1em;
+    --languagestextsize: 1em;
+    --languagesdotCirclesize: 1em;
+
+    --projectsubheading: 1.2em;
+    --projectboxheading: 1.2em;
+    --projectboxdescription: 1em;
+    --projecttext: 1em;
+
+    --buttontextsize: 1.2em;
+    --menubuttontextsize: 1.15em;
+    --socialbuttontextsize: 1em;
+
+    --contactinfo: 1.6em;
+    --contacticons: 2.6em;
+}
+
+
+/* General Styling */
+*
+{
+    font-family: 'Oxygen', sans-serif;
+    scroll-behavior: smooth;
+    box-sizing: border-box; /*include padding in total set width and height*/
+}
+section {
+    position: relative;
+    padding-top: clamp(10px, 5%, 2000px); /*padding for inside stuff*/
+    padding-bottom: 5%;
+    height: 100vh;
+}
+
+footer {
+    display: block;
+    color: #111;
+    margin: 0;
+    text-align: center;
+    font-size: var(--buttontextsize);
+}
+
+/* General heading styling */
+h1 {
+    font-family: 'Source Code Pro', sans-serif;
+    font-size: 4em;
+    font-weight: 700;
+    color: var(--black);
+}
+h3 {
+    font-family: 'Roboto Mono';
+    font-size: var(--skillsetstextsize);
+    font-weight: 700;
+    line-height: 0.5em; 
+}
+p {
+    font-family: 'Oxygen';
+    font-size: var(--bodytextsize);
+    line-height: 1.4em;
+    letter-spacing: 0.5px;
+}
+
+/* Section titles */
+.sectionheader_div {
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    margin-bottom: clamp(10px, 5%, 20px); 
+}
+#sectionheader {
+    font-size: var(--headertextsize);
+    padding: 0;
+    margin: 0;  
+    margin-right: clamp(3px, 1%, 200px); 
+    margin-left: clamp(15px, 12%, 1000px); 
+}
+#sectionline {
+    flex: 1;
+    margin-left: 0;
+    width: clamp(20px, 60vw, 50%);
+    height: 2px;
+    background-color: #111;
+}
+
+/* Subsection titles  */
+.subsectionheader {
+    font-size: var(--subsectionheadertextsize);
+    font-family: 'Source Code Pro', sans-serif;
+}
+#subsectionline {
+    margin-left: 0;
+    width: clamp(20px, 80%, 80%);
+    height: 2px;
+    background-color: #111;
+}
+
+/* Button styling */
+#pink_button {
+    text-decoration: none;
+    color: var(--black);
+    font-family: 'Oxygen';
+    font-weight: 800;
+    font-size: var(--buttontextsize);
+    letter-spacing: 1px;
+    margin-top: clamp(10px, 5%, 1000px);
+    z-index: 2;
+    position: relative;
+}
+#pink_button:hover {
+    color: var(--grey);
+}
+.dotbutton_div { /*div for button and dot*/
+    width: 20vw;
+}
+.dot {
+    height: clamp(25px, 3em, 500px);
+    width: clamp(25px, 3em, 500px);
+    background-color: var(--medpink);
+    border-radius: 50%;
+    display: inline-block;
+    transform: translate(1em, 1em);
+    z-index: 0;
+    position: relative;
+}
+
+
+/*  ~~~~~~~~~~~  NAVIGATION MENU  ~~~~~~~~~~~ */ 
+.menu {
+    position: absolute;
+    display: flex;
+    justify-content: space-between; /*horizontally*/
+    align-items: center; /*vertically*/
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;   /* show over home */ 
+    padding-top: clamp(10px, 1.5%, 40px);
+    padding-left: clamp(10px, 8%, 200px);
+    padding-right: clamp(10px, 8%, 200px);
+    margin-bottom: 5px;
+}
+.menu .logo {
+    font-family: 'Source Code Pro', sans-serif;
+    font-weight: 600;
+    font-size: var(--logo);
+    color: var(--black);
+    text-decoration: none; /* remove underline*/
+}
+.menu ul {/*menu without logo*/
+    display: flex; /*Make menu items lie flat*/
+    justify-content: center;
+    align-items: center;
+}
+.menu ul li { /*menu items list*/
+    list-style: none; /* No bullet points */
+    margin-left: 20px; /* space menu items*/
+} 
+.menu ul li a { /*menu items*/
+    font-family: 'Source Code Pro', sans-serif;
+    font-weight: 500;
+    font-size: var(--menubuttontextsize);
+    text-decoration: none; /*remove underline*/
+    color: var(--black);
+    padding: 6px 10px;
+}
+.menu ul li a:hover {
+    border-bottom: 2px solid black;
+    cursor: pointer;
+}
+.menu .logo:hover {
+    color: var(--darkpink);
+}
+/*  ~~~~~~~~~~~  HOME  ~~~~~~~~~~~ */ 
+.home {
+    height: 100vh;
+    display: block;
+}
+.home h1 {
+    letter-spacing: 5px;
+}
+
+/* Ariel liu text div */
+.ari_div { /*ariel text and line*/
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    margin-top: clamp(50px, 30vh, 1000px); /*spacing from top */
+    margin-bottom: clamp(10px, 2%, 20px); /*spacing between lines*/
+}
+#arieltxt {  
+    /* flex: 1; */
+    font-size: var(--titletextsize);
+    letter-spacing: 1px;
+    padding: 0%;
+    margin: 0;  
+    margin-right: clamp(1px, 2%, 200px); 
+    margin-left: clamp(15px, 12%, 1000px); /*spacing from left side*/
+}
+#ari_line {
+    flex: 1;
+    margin-left: 0;
+    width: clamp(20px, 60vw, 50%);
+    height: 2px;
+    background-color: #111;
+}
+
+/* Developer text div */
+.developer_div { /*developer text and line*/
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    margin: 0px;
+}
+#developertxt {
+    flex: 1; /*flex auto*/ 
+    font-size: var(--titletextsize);
+    letter-spacing: 1px;
+    margin: 0;
+    margin-left: clamp(5px, 2%, 200px); /*spacing between line and text*/
+    margin-right: 50%; /*spacing to right of text*/
+}
+#dev_line {
+    flex: 1;
+    width: clamp(20px, 60vw, 50%); /*length of line*/
+    height: 2px;
+    background-color: #111; 
+}
+
+/* text and button div */
+.undermenu_div {
+    margin-left: clamp(5px, 17%, 1000px); /*match halfway of aritct and devtxt*/
+    margin-top: clamp(10px, 3%, 200px);
+}
+.undermenu_div p {
+    font-size: var(--headerbodytextsize);
+    margin-left: 1em;
+    line-height: 1.4em;
+    letter-spacing: 0.5px;
+}
+/*  ~~~~~~~~~~~  ABOUT  ~~~~~~~~~~~ */ 
+.about {
+    height: 100vh;
+    display: block;
+    padding-right: clamp(5px, 1.5vw, 1000px);
+}
+.grid {
+    display: grid;
+    grid-template-columns: 0.4fr 0.7fr 0.7fr;
+    grid-template-rows: 100px;
+    place-items: left;
+    margin-left: clamp(15px, 10%, 1000px); 
+}
+
+/* About profile section */
+.profilesection_div {  /*image, text, social*/
+    margin-top: clamp(5px, 5%, 5000px);
+}
+#ari_image {
+    width: clamp(20px, 5em, 1000px);
+    border-radius: 50%;
+}
+#about_bio {
+    font-family: Oxygen;
+    font-size: var(--bodytextsize);
+    line-height: 1.4em;
+    letter-spacing: 0.5px;
+}
+.socialbar { /*menu without logo*/
+    display: flex; /*Make menu items lie flat*/
+    padding-left: 0;
+}
+.socialbar li {/*menu items list*/
+    flex: 1;
+    list-style: none; /* No bullet points */
+    margin-right: clamp(5px, 0.5em, 50px); /* space menu items*/
+} 
+.socialbar li a {/*menu items link*/
+    flex: 1;
+    font-family: 'Oxygen', serif;
+    font-weight: 500;
+    text-decoration: none; /*remove underline*/
+    color: var(--grey);
+    font-size: var(--socialbuttontextsize);
+}
+.socialbar li a:hover {
+    color: var(--darkpink);
+    cursor: pointer;
+}
+
+/* Experiences section */
+.experiencesLanguages_column {
+    margin-left: clamp(5px, 3vw, 50%); /*margin from profile*/
+}
+.experiences_bar {
+    list-style: none;
+    padding-left: 5px;
+    padding-right: clamp(5px, 10%, 500px);
+}
+.experiences_bar li {
+    display: inline-block;
+    font-size: var(--experiencetextsize);
+    font-weight: 500;
+    font-family: 'Oxygen';
+    letter-spacing: 0.1em;
+    margin-top: clamp(5px, 1.2em, 500px);
+}
+.experiences_bar li:before { /*circle*/
+    content: '\25CF'; /*unicode symbol for circle*/
+    margin-right: clamp(5px, 0.7em, 500px); /*margin between txt*/
+    font-size: 1.2em;
+}
+
+/* Languages section */
+#experiencespacing_div {
+    margin-bottom: clamp(5px, 10%, 5000px);
+}
+.languages_container { /*dots and languages*/
+    display: flex;
+    width: 70%;
+    align-items: center;
+}
+/* Text Portion */
+.languages_bar { /*languages list*/
+    flex: 1;
+    list-style: none;
+    padding-left: 0;
+}
+.languages_bar li { /*languages text*/
+    font-family: 'Source Code Pro';
+    font-size: var(--languagestextsize);
+    font-weight: 500;
+    padding-top: clamp(1px, 1.5em, 500px);
+}
+.language_indicator {
+    height: 2px;
+    background-color: var(--darkpink);
+    margin-top: 5px;
+}
+#Python_Languages_bar {
+    width: 95%;
+}
+#Cpp_Languages_bar {
+    width: 60%;
+}
+#Java_Languages_bar {
+    width: 50%;
+}
+#HTML_Languages_bar {
+    width: 90%;
+}
+#CSS_Languages_bar {
+    width: 80%;
+}
+#JS_Languages_bar {
+    width: 45%;
+}
+
+/* Skillsets section*/
+.skill_json {
+    font-size: var(--skillsetstextsize);
+}
+.skill_heading {
+    margin-left: clamp(5px, 1.5em, 500px);
+    margin-bottom: 0;
+    font-size: var(--skillsetstextsize);
+}
+.skill_text {
+    margin-top: 0.5em;
+    margin-left: clamp(5px, 3em, 500px);
+    font-family: 'Roboto Mono';
+    font-size: var(--skillsetstextsize);
+    line-height: 1.4em;
+    letter-spacing: 0.3px;
+}
+
+/* Guilty Pleasures section */
+.guiltypleasures_column {
+    margin-top: clamp(5px, 5vw, 50%); /*margin from profile*/
+}
+#pleasurestext {
+    font-size: var(--pleasurestextsize);
+    font-family: 'Oxygen';
+    line-height: 1.3em;
+}
+#pleasurestext:first-of-type {
+    margin-top: clamp(5px, 7%, 5000px);
+}
+
+/*  ~~~~~~~~~~~  PROJECTS  ~~~~~~~~~~~ */ 
+.projects {
+    margin-top: clamp(5px, 2%, 2000px);
+}
+.projectsectionandtext_div {
+    margin-top: clamp(5px, 3rem, 500px);
+    margin-left: clamp(15px, 12%, 500px);
+}
+.projectsection_div {
+    display: flex;
+    align-items: center;
+    padding-right: clamp(5px, 5rem, 500px);
+    margin-top: clamp(5px, 3rem, 500px);
+}
+.project_box {
+    flex: 1;
+    border: 1px solid #111;
+    margin-right: clamp(5px, 1.5rem, 500px); /*Gap between boxes*/
+    height: clamp(50px, 370px, 1000px);
+    padding: 1rem;
+    text-align: left;
+}
+.project_box:hover {
+    background-color: var(--lightlightpink);
+    cursor: pointer;
+}
+#projectbox_title {
+    font-family: 'Oxygen';
+    font-size: var(--projectboxheading);
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+#projectbox_line {
+    justify-self: center;
+    height: 0.8px;
+    width: 100%;
+    background-color: #111;
+}
+#projectbox_description {
+    font-family: 'Oxygen';
+    font-size: var(--projectboxdescription);
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin-top: clamp(1px, 1.5em, 30px);
+}
+#project_subheading {
+    font-family: 'Oxygen';
+    font-size: var(--projectsubheading);
+    font-weight: 500;
+    line-height: 1.6em;
+    letter-spacing: 0.5px;
+}
+#linkprojectbox {
+    text-decoration: none;
+    color: #111;
+}
+
+
+
+/*  ~~~~~~~~~~~  CONTACT  ~~~~~~~~~~~ */ 
+.contact_div {
+    height: 70%;
+    align-items: center;
+    justify-content: center;
+}
+#contact_info {
+    text-align: center;
+    font-family: 'Oxygen';
+    font-size: var(--contactinfo);
+    font-weight: 500;
+    line-height: 1.6em;
+    letter-spacing: 0.9px; 
+    margin-top: clamp(5px, 15%, 500px);   
+}
+.socialmedia_horibar {
+    display: flex;
+    justify-content: center;
+}
+.socialmedia_horibar a{
+    font-size: var(--contacticons);
+    text-decoration: none;
+    color: #111;
+    margin-right: 0.5em;
+}
+.socialmedia_horibar a:hover{
+    cursor: pointer;
+    color: var(--darkpink);
+}
+
+
+/*  ~~~~~~~~~~~  MEDIA QUERIES  ~~~~~~~~~~~ */
+@media (max-width:767px) { /*phone*/
+    .undermenu_div {
+        margin-left: clamp(5px, 10%, 1000px); 
+    }
+    .dot,
+    .menu,
+    .developer_div,
+    .home .dotbutton_div,
+    .guiltypleasures_column,
+    .experiencesLanguages_column,
+    .skillsets_column {
+        display: none;
+    }
+    .projectsection_div {
+        flex-direction: column;
+    }
+    .project_box {
+        border: 0;
+    }
+    #projectbox_description,
+    #projectbox_line,
+    #projectbox_txt {
+        display: none;
+    }
+    .project_box {
+        height: 100%;
+    }
+    :root {    
+        --logo: 1.2em;  
+        --titletextsize: 2em;
+        --headertextsize: 1.5em;
+        --headerbodytextsize: 1em;
+        --subsectionheadertextsize: 1.1em;
+        --bodytextsize: 1em;
+    
+        --projectboxheading: 1em;
+        --projectsubheading: 1em;
+    
+        --buttontextsize: 1em;
+        --menubuttontextsize: 1em;
+        --socialbuttontextsize: 1em;
+    
+        --contactinfo: 1.2em;
+        --contacticons: 1.7em;
+    }
+}
+@media (min-width:768px) and (max-width: 1200px) { /*Small computer or tablet*/
+    .dot {
+        display: none;
+    }
+    .skillsets_column {
+        display: none;
+    }
+    #projectbox_description,
+    #projectbox_line,
+    #projectbox_txt {
+        display: none;
+    }
+    .projectsection_div {
+        flex-direction: column;
+    }
+    .project_box {
+        border: 0;
+    }
+    .project_box {
+        height: 100%;
+    }
+    :root {    
+        --logo: 1.2em;
+        --titletextsize: 2.2em;
+        --headertextsize: 1.7em;
+        --headerbodytextsize: 1em;
+        --subsectionheadertextsize: 1.1em;
+        --bodytextsize: 1em;
+    
+        --skillsetstextsize: 0.6em;
+        --experiencetextsize: 0.9em;
+        --pleasurestextsize: 1em;
+        --languagestextsize: 1em;
+        --languagesdotCirclesize: 1em;
+    
+        --projectsubheading: 1.1em;
+        --projectboxheading: 1.1em;
+        --projectboxdescription: 1em;
+        --projecttext: 1em;
+    
+        --buttontextsize: 1.1em;
+        --menubuttontextsize: 1em;
+        --socialbuttontextsize: 1em;
+    
+        --contactinfo: 1.3em;
+        --contacticons: 2em;
+    }
+}

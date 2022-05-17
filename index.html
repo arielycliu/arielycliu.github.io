@@ -1,256 +1,216 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <title>.ari()</title>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- JavaScript -->
+    <script type="text/javascript" src="main.js"></script>
+</head>
+<body>
+    <!-- TOP MENU -->
+    <header class="menu">
+        <a href="#home" class="logo">ariel liu</a>
+        <ul>
+            <li><a href="#about">.about()</a></li>
+            <li><a href="#projects">.projects()</a></li>
+            <li><a href="#contact">.contact()</a></li>
+        </ul>
+    </header>
 
-        <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- HOME SECTION -->
+    <section class="home" id="home">
+        <!-- <div class="greybg_circle"></div> 
+        <div class="blackbg_slant"></div> -->
+        <div class="ari_div">
+            <h1 id="arieltxt">ariel liu</h1> 
+            <div id="ari_line"></div>
+        </div>
+        <div class="developer_div">
+            <div id="dev_line"></div>
+            <h1 id="developertxt">developer</h1>
+        </div>
+        <div class="undermenu_div">
+            <p>Hi I'm Ariel, a student developer specializing in machine learning, <br>front-end, and UX/UI design. </p>
+            <div class="dotbutton_div">
+                <div class="dot"></div>
+                <a href="#about" id="pink_button">learn more()</a>
+            </div>           
+        </div> 
+    </section> 
+             
+    <!-- ABOUT SECTION -->
+    <section class="about" id="about">
+        <div class="sectionheader_div">
+            <h1 id="sectionheader">.about()</h1>
+            <div id="sectionline"></div>
+        </div>
 
-        <!-- ########### ICONS########### -->
-        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-
-
-        <title>Ariel Liu</title>
-        <link rel="shortcut icon" href="assets/img/favicon.ico"/>
-    </head>
-    <body>
-        <!--########### HEADER NAV ###########-->
-        <header class="l-header">
-            <nav class="nav bd-grid">
-                <div>
-                    <a href="#home" class="nav__logo">💙 Ariel</a>
+        <div class="grid">
+            <div class="profilesection_div">
+                <img src="images/ariel anime pfp cropped.jpg" alt="Ariel" id="ari_image">
+                <p id="about_bio">Computer science student. Interested in neural networks, software development, IoT, and UX/UI design.</p>
+    
+                <ul class="socialbar">
+                    <li><a href="https://medium.com/@arielycliu" target="_blank">Medium</a></li>
+                    <li><a href="https://github.com/arielycliu" target="_blank">Github</a></li>
+                    <li><a href="https://www.linkedin.com/in/arielycliu/" target="_blank">Linkedin</a></li>
+                    <li><a href="mailto:ariel.yc.liu@gmail.com">Email</a></li>
+                </ul>
+    
+                <div class="dotbutton_div">
+                    <div class="dot"></div>
+                    <a href="files/Ariel Liu Resume.pdf" target="_blank" id="pink_button">resume()</a>
                 </div>
 
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
-                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                        <li class="nav__item"><a href="#portfolio" class="nav__link">Portfolio</a></li>
-                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-                    </ul>
+                <div class="guiltypleasures_column">
+                    <h2 class="subsectionheader">guilty_pleasures()</h2>
+                    <div id="subsectionline"></div>
+                    <p id="pleasurestext"><i class='bx bx-cake' ></i> baking macarons</p><p id="pleasurestext"><i class='bx bx-palette' ></i> watercolor landscapes</p>
+                    <p id="pleasurestext"><i class='bx bxs-cat'></i> petting my cat</p>
+                    <p id="pleasurestext"><i class='bx bx-book-bookmark' ></i> struggling thru chinese literature</p>
+                    <p id="pleasurestext"><i class='bx bx-swim' ></i> synchronized swimming</p>
                 </div>
 
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-menu'></i>
-                </div>
-            </nav>
-        </header>
-
-        <main class="l-main">
-            <!--########### HOME ###########-->
-            <section class="home bd-grid" id="home">
-                <div class="home__data">
-                    <h1 class="home__title">Hello,<br>I'm <span class="home__title-color">Ariel</span><br>
-                        <span class="home__subtitle"><i>Student & Developer</i></h1>  
-                    <a href="#about" class="button">Learn More</a>
-                </div>
-
-                <div class="home__img">    
-                    <img src="assets/img/intro.png" alt="girl working hard at desk">
-                </div>
-                
-                <div class="home__social">
-                    <a href="https://github.com/arielycliu"  target="_blank" class="home__social-icon"><i class='bx bxl-github'></i></a>
-                    <a href="https://www.linkedin.com/in/arielycliu/"  target="_blank" class="home__social-icon"><i class='bx bxl-linkedin-square' ></i></a>
-                    <a href="https://medium.com/@arielycliu"  target="_blank" class="home__social-icon"><i class='bx bxl-medium' ></i></a>
-                </div>
-
-            </section>
-            <!--########### ABOUT ###########-->
-            <section class="about section " id="about">
-                <h2 class="section-title">ABOUT ME</h2>
-
-                <div class="about__container bd-grid">
-                    <div class="about__img">
-                        <img src="assets/img/transparent about.png" alt="Ariel About Me Picture">
-                    </div>
-                    
-                    <div>
-                        <h2 class="about__subtitle">Hi there 👋 I'm Ariel</h2>
-                        <p class="about__text">I’m a student from Mississauga, Ontario. <br> 
-                            I specialize in AI but I’m passionate about other emerging technologies such as IoT and edge computing. I spend a lot of time working on ML projects, tinkering with micro-controllers and doing some UX/UI design. In my spare time I love attending hackathons!</p>           
-                        <br>
-                        <a href="https://arielycliu.github.io/Resume/" target="_blank" class="button">Resume</a>
-                    </div>                                   
-                </div>
-            </section>
-
-            <!--########### SKILLS ###########-->
-            <section class="skills section" id="skills">
-                <h2 class="section-title">SKILLSETS</h2>
-
-                <div class="skills__container bd-grid">          
-                    <div>
-                        <h2 class="skills__subtitle">My Toolkit 🧰</h2>
-                        <p class="skills__text"><span class="home__title-color"><b>Proficient in:</b></span> Python, C++, Keras, Tensorflow, and Microcontrollers</p>
-                        
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='uil uil-robot skills__icon'></i>
-                                <span class="skills__name">Keras</span>
-                            </div>
-                            <div class="skills__bar skills__keras">
-
-                            </div>
-                            <div>
-                                <span class="skills__percentage">75%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='uil uil-arrow skills__icon'></i>
-                                <span class="skills__name">Python</span>
-                            </div>
-                            <div class="skills__bar skills__python">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">86%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='uil uil-code-branch skills__icon' ></i>
-                                <span class="skills__name">Git</span>
-                            </div>
-                            <div class="skills__bar skills__git">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">60%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='uil uil-paint-tool skills__icon'></i>
-                                <span class="skills__name">UX/UI</span>
-                            </div>
-                            <div class="skills__bar skills__ux">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">72%</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div>              
-                        <img src="assets/img/Skills.png" alt="" class="skills__img">
-                    </div>
-                </div>
-            </section>
-
-            <!--########### PORTFOLIO ###########-->
-            <section class="portfolio section" id="portfolio">
-                <h2 class="section-title">PORTFOLIO</h2>
-                
-                <div class="productFilter bd-grid">
-                    <ul>
-                        <li class="list active" data-filter="all">All</li>
-                        <li class="list" data-filter="articles">Articles</li>
-                        <li class="list" data-filter="newsletters">Newsletters</li>
-                        <li class="list" data-filter="projects">Projects</li>
-                        <li class="list" data-filter="design">Design</li>
-                    </ul>
-                </div>
-                
-                <div class="product bd-grid">
-                    <div class="itemBox articles projects">
-                        <a href="https://arielycliu.medium.com/classifying-food-with-computer-vision-a473249cf2f2" target="_blank">
-                            <img src="assets/img/portfolio/projects/food.png" alt="food ai article">
-                        </a>
-                    </div>
-                    <div class="itemBox articles">
-                        <a href="https://arielycliu.medium.com/preventing-fire-with-iot-a-simple-solution-c42853dde7fe" target="_blank">
-                            <img src="assets/img/portfolio/projects/temp.png" alt="temperature iot article">
-                        </a>
-                    </div>
-                    <div class="itemBox articles projects">
-                        <a href="https://medium.datadriveninvestor.com/identifying-covid-19-induced-pneumonia-with-ai-5ae7fb5ee97b" target="_blank">
-                            <img src="assets/img/portfolio/projects/covid.png" alt="covid ai article">
-                        </a>
-                    </div>
-                    <div class="itemBox articles">
-                        <a href="https://arielycliu.medium.com/get-alerted-when-your-plants-dying-d085d0bdedf5" target="_blank">
-                            <img src="assets/img/portfolio/projects/plant.png" alt="plant iot article">
-                        </a>
-                    </div>
-                    <div class="itemBox newsletters">
-                        <a href="https://mailchi.mp/0332b23633b1/april-newsletter" target="_blank">
-                            <img src="assets/img/portfolio/newsletters/april20.png" alt="April 2020 Newsletter">
-                        </a>
-                    </div>
-                    <div class="itemBox newsletters">
-                        <a href="https://mailchi.mp/52d140e3aaf0/may-newsletter" target="_blank">
-                            <img src="assets/img/portfolio/newsletters/may20.png" alt="May 2020 Newsletter">
-                        </a>
-                    </div>
-                    <div class="itemBox design">
-                        <a href="https://www.instagram.com/herdsocial/" target="_blank">
-                            <img src="assets/img/portfolio/design/herd.png" alt="Herd Social Media">
-                        </a>
-                    </div>
-                </div>
-            </section>
-
-            <!--########### CONTACT ###########-->
-            <section class="contact section" id="contact">
-                <h2 class="section-title">GET IN TOUCH!</h2>
-                <div class="contact__container bd-grid">
-                    <form action="https://formspree.io/f/mvodywgb" class="contact__form" method="POST" onSubmit="SubmittedFormAlert()">
-                        <input type="name" name="name" id="full-name" placeholder="Name" class="contact__input" required="">
-                        <input type="email" name="_replyto" id="email-address" placeholder="Email" class="contact__input" required="">
-                        <textarea name="message" placeholder="What would you like to say?" cols="0" rows="10" class="contact__input" required=""></textarea>
-                        <input type="submit" value="Submit" class="contact__button button">
-                    </form>
-                </div> <!-- popup submitted -->
-            </section>
-        </main>
-
-        <!--########### FOOTER ###########-->
-        <footer class="footer">
-            <p class="footer__title">Ariel Liu</p>
-            <div class="footer__social">
-                <a href="https://github.com/arielycliu"  target="_blank" class="footer__icon"><i class='bx bxl-github'></i></a>
-                <a href="https://www.linkedin.com/in/arielycliu/"  target="_blank" class="footer__icon"><i class='bx bxl-linkedin-square' ></i></a>
-                <a href="https://medium.com/@arielycliu"  target="_blank" class="footer__icon"><i class='bx bxl-medium' ></i></a>
             </div>
-            <p>✨ Welcome to my alcove on the internet</p>
-        </footer>
+            <div class="experiencesLanguages_column">
+                <h2 class="subsectionheader">experiences()</h2>
+                <div id="subsectionline"></div>
 
+                <ul class="experiences_bar">
+                    <li>2021: CryptoChicks Graphic Design Intern</li>
+                    <li>2020-21: Canfly Programming Instructor</li>
+                    <li>2019-21: Member of The Knowledge Society</li>
+                </ul>
 
-        <!--########### SCROLL REVEAL ###########-->
-        <script src="https://unpkg.com/scrollreveal"></script>
+                <div id="experiencespacing_div"> </div>
+                
+                <h2 class="subsectionheader">languages()</h2>
+                <div id="subsectionline"></div>
+                <div class="languages_container">
+                    <ul class="languages_bar">
+                        <li>C++ <div class="language_indicator" id="Cpp_Languages_bar"></div></li>
+                        <li>Python <div class="language_indicator" id="Python_Languages_bar"></div></li>
+                        <li>Java <div class="language_indicator" id="Java_Languages_bar"></div></li>
+                        <li>HTML5 <div class="language_indicator" id="HTML_Languages_bar"></div></li>
+                        <li>CSS3 <div class="language_indicator" id="CSS_Languages_bar"></div></li>
+                        <li>JavaScript <div class="language_indicator" id="JS_Languages_bar"></div></li>
+                    </ul>
+                </div>
+                
+                
+            </div>
+            <div class="skillsets_column">
+                <h2 class="subsectionheader">skillsets()</h2>
+                <div id="subsectionline"></div>
+                <h3 class="skill_json">{</h3>
+                <h3 class="skill_heading">"skillsets.ai": {</h3>
+                    <p class="skill_text">"weight": 30<br>"languages": ["Python", "Keras", "Tensorflow"]</p>
+                <h3 class="skill_heading">},</h3>
+                <h3 class="skill_heading">"skillsets.webdev": {</h3>
+                    <p class="skill_text">"weight": 20,<br>
+                        "languages": ["HTML5", "CSS3", "JavaScript"],<br>
+                        "front-end": ["React, Angular"],<br>
+                        "back-end": ["Flask", "Django"]</p>
+                <h3 class="skill_heading">},</h3>
+                <h3 class="skill_heading">"skillsets.design": {</h3>
+                    <p class="skill_text">"weight": 20,<br>
+                        "applications": ["Canva", "Figma", "FireAlpaca"]</p>
+                <h3 class="skill_heading">},</h3>
+                <h3 class="skill_heading">"skillsets.hardware": {</h3>
+                    <p class="skill_text">"weight": 15,<br>
+                        "microcontrollers": ["Arduino", "ESP32"]</p>
+                <h3 class="skill_heading">},</h3>
+                <h3 class="skill_heading">"skillsets.other": {</h3>
+                    <p class="skill_text">"weight": 15,<br>
+                        "video_editing": "Powerdirector",<br>
+                        "game_development": "Unity",<br>
+                        "3D_design": ["AutoCAD", "Inventor"],<br>
+                        "version_control": "Github"</p>
+                <h3 class="skill_heading">}</h3>
+                <h3 class="skill_json">}</h3>
+            </div> 
+        </div>   
+    </section>
+    <!-- PROJECTS SECTION -->
+    <section class="projects" id="projects">
+        <div class="sectionheader_div">
+            <h1 id="sectionheader">.project()</h1>
+            <div id="sectionline"></div>    
+        </div>
+        <div class="projectsectionandtext_div">
+            <h4 id="project_subheading">A small sneak peak into the projects I have worked on 💜 <br>For a more extensive collection, check out my 
+                <a href="https://arielycliu.medium.com/" target="_blank">Medium</a>
+                 and 
+                 <a href="https://github.com/arielycliu" target="_blank">Github</a>
+                 </h4>
+            <div class="projectsection_div">
+                <a href="https://arielycliu.medium.com/classifying-food-with-computer-vision-a473249cf2f2" target="_blank" id="linkprojectbox">
+                    <div class="project_box">
+                        <p id="projectbox_title">Classifying Food with Computer Vision 🍞</p>
+                        <div id="projectbox_line"></div>
+                        <h4 id="projectbox_description">Description</h4>
+                        <p id="projectbox_txt">An in-depth tutorial on identifying food with CNNs (using Keras) 📸 — Who doesn’t love good food? A nice coffee in the morning starts your day on a pleasant note. A hearty soup at lunch soothes the soul. And a tasty... </p>
+                    </div>
+                </a>
+                <a href="https://medium.datadriveninvestor.com/identifying-covid-19-induced-pneumonia-with-ai-5ae7fb5ee97b" target="_blank" id="linkprojectbox">
+                    <div class="project_box">
+                        <p id="projectbox_title">Identifying COVID-19 induced Pneumonia With AI 🧠</p>
+                        <div id="projectbox_line"></div>
+                        <h4 id="projectbox_description">Description</h4>
+                        <p id="projectbox_txt">Using Keras VGG16 with Transfer Learning to Detect Pneumonia from Chest X-rays — The current COVID-19 pandemic places a huge strain on healthcare systems, with hospitals overloaded, a lack of testing capacity, ... </p>
+                    </div>
+                </a>
+                <a href="https://arielycliu.medium.com/get-alerted-when-your-plants-dying-d085d0bdedf5" target="_blank" id="linkprojectbox">
+                    <div class="project_box">
+                        <p id="projectbox_title">Get Alerted When Your Plant’s Dying🌱</p>
+                        <div id="projectbox_line"></div>
+                        <h4 id="projectbox_description">Description</h4>
+                        <p id="projectbox_txt">Tweeting and notifying the plant’s health with an ESP moisture monitoring system 💦 — Allow me to pose a question… How much do you need to mess up to kill a cactus? 🌵 I mean that thing’s literally designed for desert cond... </p>
+                    </div>
+                </a>             
+                
+                
+            </div>
+            
+        </div>
+        
+    </section>
 
-        <!--########### MAIN JS ###########-->
-        <script src="assets/js/main.js"></script>
-        <script
-			  src="https://code.jquery.com/jquery-3.6.0.js"
-			  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-			  crossorigin="anonymous"></script>
+    <!-- CONTACT SECTION -->
+    <section class="contact" id="contact">
+        <div class="sectionheader_div">
+            <h1 id="sectionheader">.contact()</h1>
+            <div id="sectionline"></div>
+        </div>
+        <div class="contact_div">
+            <p id="contact_info">
+                Looking to get in contact? <br>
+                You can reach me at  <a href="mailto:ariel.yc.liu@gmail.com">ariel.yc.liu@gmail.com</a> 
+            </p>
+            <div class="socialmedia_horibar">
+                <a href="https://medium.com/@arielycliu" target="_blank">
+                    <i class='bx bxl-medium-square' ></i>
+                </a>                
+                <a href="https://github.com/arielycliu" target="_blank">
+                    <i class='bx bxl-github'></i>
+                </a>
+                <a href="mailto:ariel.yc.liu@gmail.com" target="_blank">
+                    <i class='bx bxs-envelope' ></i>
+                </a>
+                <a href="http://www.linkedin.com/in/arielycliu" target="_blank">
+                    <i class='bx bxl-linkedin-square' ></i>
+                </a>
+            </div>
+        </div>
+    </section>
 
-        <!-- filter buttons portfolio js -->
-        <script type="text/javascript">
-            $(document).ready(function(){
-                $('.list').click(function(){
-                    const value = $(this).attr('data-filter');
-                    if (value == 'all'){
-                        $('.itemBox').show('100');
-                    }
-                    else {
-                        $('.itemBox').not('.'+ value).hide('100');
-                        $('.itemBox').filter('.'+ value).show('100');
-                    }
-                })
-                // active on selected item
-                $('.list').click(function(){
-                    $(this).addClass('active').siblings().removeClass('active');
-
-                })
-            })
-        </script>
-
-    </body>
-</html>
+    <!-- <footer>
+        <p>© Created by Ariel Liu 2022 💖</p>
+    </footer>> -->
+</body>
+</html> 
