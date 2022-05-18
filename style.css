@@ -36,8 +36,9 @@
     --menubuttontextsize: 1.15em;
     --socialbuttontextsize: 1em;
 
-    --contactinfo: 1.6em;
-    --contacticons: 2.6em;
+    /*Contact fonts*/
+    --contactbody_textsize: 1.7vw;
+    --contact_iconsize: 2.3vw;
 }
 
 
@@ -469,26 +470,28 @@ p {
 
 
 /*  ~~~~~~~~~~~  CONTACT  ~~~~~~~~~~~ */ 
-.contact_div {
-    height: 70%;
+.contact{
+    height: auto;
+}
+.contact_div { /*div with text and social media bar*/
+    padding: 15%;
     align-items: center;
     justify-content: center;
 }
-#contact_info {
+.contact_info_text {
     text-align: center;
     font-family: 'Oxygen';
-    font-size: var(--contactinfo);
+    font-size: var(--contactbody_textsize);
     font-weight: 500;
     line-height: 1.6em;
     letter-spacing: 0.9px; 
-    margin-top: clamp(5px, 15%, 500px);   
 }
 .socialmedia_horibar {
     display: flex;
     justify-content: center;
 }
 .socialmedia_horibar a{
-    font-size: var(--contacticons);
+    font-size: var(--contact_iconsize);
     text-decoration: none;
     color: #111;
     margin-right: 0.5em;
@@ -510,7 +513,10 @@ p {
     .home .dotbutton_div,
     .guiltypleasures_column,
     .experiencesLanguages_column,
-    .skillsets_column {
+    .skillsets_column,
+    #projectbox_description,
+    #projectbox_line,
+    #projectbox_txt {
         display: none;
     }
     .projectsection_div {
@@ -519,13 +525,13 @@ p {
     .project_box {
         border: 0;
     }
-    #projectbox_description,
-    #projectbox_line,
-    #projectbox_txt {
-        display: none;
-    }
     .project_box {
         height: 100%;
+    }
+    .contact_info_text,
+    .socialmedia_horibar {
+        justify-content: left;
+        text-align: left;
     }
     :root {    
         --logo: 1.2em;  
@@ -542,8 +548,9 @@ p {
         --menubuttontextsize: 1em;
         --socialbuttontextsize: 1em;
     
-        --contactinfo: 1.2em;
-        --contacticons: 1.7em;
+        /*Contact fonts*/
+        --contactbody_textsize: 3vw;
+        --contact_iconsize: 4vw;
     }
 }
 @media (min-width:768px) and (max-width: 1200px) { /*Small computer or tablet*/
@@ -590,7 +597,8 @@ p {
         --menubuttontextsize: 1em;
         --socialbuttontextsize: 1em;
     
-        --contactinfo: 1.3em;
-        --contacticons: 2em;
+        /*Contact fonts*/
+        --contactbody_textsize: 2.3vw;
+        --contact_iconsize: 2.8vw;
     }
 }
