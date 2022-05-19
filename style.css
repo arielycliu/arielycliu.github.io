@@ -21,20 +21,21 @@
     --subsectionheadertextsize: 1.1em;
     --bodytextsize: 1em;
 
+    --buttontextsize: 1.2em;
+    --menubuttontextsize: 1.15em;
+    --socialbuttontextsize: 1em;
+
     --skillsetstextsize: 0.9em;
     --experiencetextsize: 0.9em;
     --pleasurestextsize: 1em;
     --languagestextsize: 1em;
     --languagesdotCirclesize: 1em;
 
-    --projectsubheading: 1.2em;
-    --projectboxheading: 1.2em;
-    --projectboxdescription: 1em;
-    --projecttext: 1em;
-
-    --buttontextsize: 1.2em;
-    --menubuttontextsize: 1.15em;
-    --socialbuttontextsize: 1em;
+    /*Project fonts*/
+    --projectsubheading: 1.3vw;
+    --projectboxheading: 1.3vw;
+    --projectboxdescription: 1vw;
+    --projecttext: 1vw;
 
     /*Contact fonts*/
     --contactbody_textsize: 1.7vw;
@@ -52,8 +53,8 @@
 section {
     position: relative;
     padding-top: clamp(10px, 5%, 2000px); /*padding for inside stuff*/
-    padding-bottom: 5%;
-    height: 100vh;
+    padding-bottom: 10%;
+    height: auto;
 }
 
 footer {
@@ -412,7 +413,8 @@ p {
 
 /*  ~~~~~~~~~~~  PROJECTS  ~~~~~~~~~~~ */ 
 .projects {
-    margin-top: clamp(5px, 2%, 2000px);
+    height: auto;
+    margin-bottom: 10%;
 }
 .projectsectionandtext_div {
     margin-top: clamp(5px, 3rem, 500px);
@@ -420,9 +422,15 @@ p {
 }
 .projectsection_div {
     display: flex;
-    align-items: center;
-    padding-right: clamp(5px, 5rem, 500px);
-    margin-top: clamp(5px, 3rem, 500px);
+    padding-right: clamp(5px, 5%, 500px);
+    margin-top: clamp(5px, 3%, 500px);
+}
+#project_subheading {
+    font-family: 'Oxygen';
+    font-size: var(--projectsubheading);
+    font-weight: 500;
+    line-height: 1.6em;
+    letter-spacing: 0.5px;
 }
 .project_box {
     flex: 1;
@@ -455,23 +463,15 @@ p {
     letter-spacing: 0.5px;
     margin-top: clamp(1px, 1.5em, 30px);
 }
-#project_subheading {
-    font-family: 'Oxygen';
-    font-size: var(--projectsubheading);
-    font-weight: 500;
-    line-height: 1.6em;
-    letter-spacing: 0.5px;
-}
 #linkprojectbox {
     text-decoration: none;
     color: #111;
 }
 
 
-
 /*  ~~~~~~~~~~~  CONTACT  ~~~~~~~~~~~ */ 
 .contact{
-    height: auto;
+    height: auto; /*Not set too 100 vh*/
 }
 .contact_div { /*div with text and social media bar*/
     padding: 15%;
@@ -507,6 +507,11 @@ p {
     .undermenu_div {
         margin-left: clamp(5px, 10%, 1000px); 
     }
+    .home, 
+    .about {
+        height: auto;
+    }
+
     .dot,
     .menu,
     .developer_div,
@@ -514,19 +519,26 @@ p {
     .guiltypleasures_column,
     .experiencesLanguages_column,
     .skillsets_column,
+    #sectionline,
     #projectbox_description,
     #projectbox_line,
     #projectbox_txt {
         display: none;
     }
+    .projects {
+        margin-top: 30%;
+    }
     .projectsection_div {
-        flex-direction: column;
+        display: grid;
     }
     .project_box {
         border: 0;
-    }
-    .project_box {
         height: 100%;
+        padding: 0;
+    }
+    .project_box:hover {
+        background-color: white;
+        color: var(--darkdarkpink);
     }
     .contact_info_text,
     .socialmedia_horibar {
@@ -534,19 +546,9 @@ p {
         text-align: left;
     }
     :root {    
-        --logo: 1.2em;  
-        --titletextsize: 2em;
-        --headertextsize: 1.5em;
-        --headerbodytextsize: 1em;
-        --subsectionheadertextsize: 1.1em;
-        --bodytextsize: 1em;
-    
-        --projectboxheading: 1em;
-        --projectsubheading: 1em;
-    
-        --buttontextsize: 1em;
-        --menubuttontextsize: 1em;
-        --socialbuttontextsize: 1em;
+        /*Project fonts*/
+        --projectsubheading: 2.5vw;
+        --projectboxheading: 2.5vw;
     
         /*Contact fonts*/
         --contactbody_textsize: 3vw;
@@ -554,49 +556,30 @@ p {
     }
 }
 @media (min-width:768px) and (max-width: 1200px) { /*Small computer or tablet*/
-    .dot {
-        display: none;
-    }
-    .skillsets_column {
-        display: none;
-    }
+    .dot,
+    .skillsets_column,
     #projectbox_description,
     #projectbox_line,
     #projectbox_txt {
         display: none;
     }
     .projectsection_div {
-        flex-direction: column;
+        display: grid;
     }
     .project_box {
         border: 0;
-    }
-    .project_box {
         height: 100%;
+        padding: 0;
+    }
+    .project_box:hover {
+        background-color: white;
+        color: var(--darkdarkpink);
     }
     :root {    
-        --logo: 1.2em;
-        --titletextsize: 2.2em;
-        --headertextsize: 1.7em;
-        --headerbodytextsize: 1em;
-        --subsectionheadertextsize: 1.1em;
-        --bodytextsize: 1em;
-    
-        --skillsetstextsize: 0.6em;
-        --experiencetextsize: 0.9em;
-        --pleasurestextsize: 1em;
-        --languagestextsize: 1em;
-        --languagesdotCirclesize: 1em;
-    
-        --projectsubheading: 1.1em;
-        --projectboxheading: 1.1em;
-        --projectboxdescription: 1em;
-        --projecttext: 1em;
-    
-        --buttontextsize: 1.1em;
-        --menubuttontextsize: 1em;
-        --socialbuttontextsize: 1em;
-    
+        /*Project fonts*/
+        --projectsubheading: 120%;
+        --projectboxheading: 2.3vw;
+
         /*Contact fonts*/
         --contactbody_textsize: 2.3vw;
         --contact_iconsize: 2.8vw;
