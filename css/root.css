@@ -17,7 +17,7 @@
     --menu_logo: 1.3em;
     --menu_buttons: 1em;
 
-    --home_title: 3.2em;
+    --home_title: 5.8vw;
     --about_skilltag: 0.9em;
     --about_ariel_title: 1.8em;
     --contact_socialbar: 2.3em;
@@ -30,7 +30,11 @@
 
     --marginleft_about: 11vw;
     --marginright_about: 10vw;
+
+    --padding_portfolio: 11vw;
 }
+
+/* home: 3.2em  */
 
 * {
     font-family: 'Mulish';
@@ -39,6 +43,7 @@
 }
 section {
     position: relative;
+    height: 100vh;
 }
 a {
     text-decoration: none;
@@ -56,6 +61,7 @@ h2 {
 }
 h3 {
     font-weight: 700; /*Button bold*/
+    font-family: 'Mulish';
 }
 h4 {
     font-weight: 600; /*Medium*/

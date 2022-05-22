@@ -1,25 +1,23 @@
-.portfolio {
+.portfolio {  /*align self center*/
     background-color: var(--bg_grey);
-    height: auto;
-    width: 110%;
+    width: 100%;
     padding-bottom: 10%;
+    padding-top: clamp(2em, 6%, 600px);
+    align-self: center;
+    padding-left: var(--padding_portfolio);
+    padding-right: var(--padding_portfolio);
 }
 #portfolio_title {
     font-size: var(--section_title);
     display: inline-block; /*fix gradient*/
-    margin-left: var(--marginleft_about);
-    margin-top: 5%;
     margin-bottom: 0.6em;
 }
 #portfolio_subtitle {
     margin: 0;
-    margin-left: var(--marginleft_about);
     font-size: var(--section_subtitle);
     margin-bottom: 3em;
 }
 .portfolio_div {
-    margin-left: var(--marginleft_about);
-    margin-right: var(--marginleft_about);
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
