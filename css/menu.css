@@ -1,0 +1,68 @@
+.menu {
+    position: absolute;
+    display: flex;
+    justify-content: space-between; /*horizontally*/
+    align-items: center; /*vertically*/
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;   /* show over home */ 
+    padding-top: clamp(10px, 1.5%, 40px);
+    padding-left: clamp(10px, 7%, 200px);
+    padding-right: clamp(10px, 7%, 200px);
+    margin-bottom: 5px;
+}
+.menu .logo {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: var(--menu_logo);
+    color: var(--black);
+    text-decoration: none; /* remove underline*/
+    display: inline-block;
+}
+.menu .logo:hover {
+    background-image: linear-gradient(60deg, var(--gradient_blue), var(--gradient_purple));
+    background-clip: text;
+    color: transparent;
+}
+
+
+.menu ul {/*menu without logo*/
+    display: flex; /*Make menu items lie flat*/
+    justify-content: center;
+    align-items: center;
+}
+.menu ul li { /*menu items list*/
+    list-style: none; /* No bullet points */
+    margin-left: 3vw; /* space menu items*/
+    display: inline-block;
+} 
+.menu ul li a { /*menu items*/
+    font-weight: 500;
+    font-size: var(--menu_buttons);
+    text-decoration: none; /*remove underline*/
+    color: var(--black);
+    padding: 6px 10px;
+    display: inline-block;
+    position: relative;
+}
+.menu ul li a:hover {
+    border-bottom: 2px solid var(--white);
+    cursor: pointer;
+}
+.menu ul li a::after {
+    content: "";
+    background-color: black;
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    transform: scaleX(0);
+    transform-origin: bottom left;
+    transition: transform 0.3s ease;
+}  
+.menu ul li a:hover::after {
+    transform-origin: bottom left;
+    transform: scaleX(1);
+}
