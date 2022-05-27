@@ -1,0 +1,383 @@
+/* Import fonts */
+/*Source Code Pro and Oxygen*/
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+/* Color variables */
+:root {
+    --black: #111;
+    --lightgrey: #F6F6F6;
+    --grey: #5e5e5e;
+    --lightlightpink: #FFF2ED;
+    --lightpink: #FFE0D6;
+    --medpink: #ffd3c4;
+    --darkpink: #ffaf94;
+    --darkdarkpink: #ff5454;
+
+    --logo: 1.5em;
+    --titletextsize: 3.4em;
+    --headertextsize: 2.2em;
+    --headerbodytextsize: 1.2em;
+    --subsectionheadertextsize: 1.1em;
+    --bodytextsize: 1em;
+
+    --buttontextsize: 1.2em;
+    --menubuttontextsize: 1.15em;
+    --socialbuttontextsize: 1em;
+
+    --skillsetstextsize: 0.9em;
+    --experiencetextsize: 0.9em;
+    --pleasurestextsize: 1em;
+    --languagestextsize: 1em;
+    --languagesdotCirclesize: 1em;
+
+    /*Project fonts*/
+    --projectsubheading: 1.3vw;
+    --projectboxheading: 1.3vw;
+    --projectboxdescription: 1vw;
+    --projecttext: 1vw;
+
+    /*Contact fonts*/
+    --contactbody_textsize: 1.7vw;
+    --contact_iconsize: 2.3vw;
+}
+
+
+/* General Styling */
+*
+{
+    font-family: 'Oxygen', sans-serif;
+    scroll-behavior: smooth;
+    box-sizing: border-box; /*include padding in total set width and height*/
+}
+section {
+    position: relative;
+    padding-top: clamp(10px, 5%, 2000px); /*padding for inside stuff*/
+    padding-bottom: 10%;
+    height: auto;
+}
+
+footer {
+    display: block;
+    color: #111;
+    margin: 0;
+    text-align: center;
+    font-size: var(--buttontextsize);
+}
+
+/* General heading styling */
+h1 {
+    font-family: 'Source Code Pro', sans-serif;
+    font-size: 4em;
+    font-weight: 700;
+    color: var(--black);
+}
+h3 {
+    font-family: 'Roboto Mono';
+    font-size: var(--skillsetstextsize);
+    font-weight: 700;
+    line-height: 0.5em; 
+}
+p {
+    font-family: 'Oxygen';
+    font-size: var(--bodytextsize);
+    line-height: 1.4em;
+    letter-spacing: 0.5px;
+}
+
+/* Section titles */
+.sectionheader_div {
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    margin-bottom: clamp(10px, 5%, 20px); 
+}
+#sectionheader {
+    font-size: var(--headertextsize);
+    padding: 0;
+    margin: 0;  
+    margin-right: clamp(3px, 1%, 200px); 
+    margin-left: clamp(15px, 12%, 1000px); 
+}
+#sectionline {
+    flex: 1;
+    margin-left: 0;
+    width: clamp(20px, 60vw, 50%);
+    height: 2px;
+    background-color: #111;
+}
+
+/* Subsection titles  */
+.subsectionheader {
+    font-size: var(--subsectionheadertextsize);
+    font-family: 'Source Code Pro', sans-serif;
+}
+#subsectionline {
+    margin-left: 0;
+    width: clamp(20px, 80%, 80%);
+    height: 2px;
+    background-color: #111;
+}
+
+/* Button styling */
+#pink_button {
+    text-decoration: none;
+    color: var(--black);
+    font-family: 'Oxygen';
+    font-weight: 800;
+    font-size: var(--buttontextsize);
+    letter-spacing: 1px;
+    margin-top: clamp(10px, 5%, 1000px);
+    z-index: 2;
+    position: relative;
+}
+#pink_button:hover {
+    color: var(--grey);
+}
+.dotbutton_div { /*div for button and dot*/
+    width: 20vw;
+}
+.dot {
+    height: clamp(25px, 3em, 500px);
+    width: clamp(25px, 3em, 500px);
+    background-color: var(--medpink);
+    border-radius: 50%;
+    display: inline-block;
+    transform: translate(1em, 1em);
+    z-index: 0;
+    position: relative;
+}
+
+/*  ~~~~~~~~~~~  ABOUT  ~~~~~~~~~~~ */ 
+.about {
+    height: 100vh;
+    display: block;
+    padding-right: clamp(5px, 1.5vw, 1000px);
+}
+.grid {
+    display: grid;
+    grid-template-columns: 0.4fr 0.7fr 0.7fr;
+    grid-template-rows: 100px;
+    place-items: left;
+    margin-left: clamp(15px, 10%, 1000px); 
+}
+
+/* About profile section */
+.profilesection_div {  /*image, text, social*/
+    margin-top: clamp(5px, 5%, 5000px);
+}
+#ari_image {
+    width: clamp(20px, 5em, 1000px);
+    border-radius: 50%;
+}
+#about_bio {
+    font-family: Oxygen;
+    font-size: var(--bodytextsize);
+    line-height: 1.4em;
+    letter-spacing: 0.5px;
+}
+.socialbar { /*menu without logo*/
+    display: flex; /*Make menu items lie flat*/
+    padding-left: 0;
+}
+.socialbar li {/*menu items list*/
+    flex: 1;
+    list-style: none; /* No bullet points */
+    margin-right: clamp(5px, 0.5em, 50px); /* space menu items*/
+} 
+.socialbar li a {/*menu items link*/
+    flex: 1;
+    font-family: 'Oxygen', serif;
+    font-weight: 500;
+    text-decoration: none; /*remove underline*/
+    color: var(--grey);
+    font-size: var(--socialbuttontextsize);
+}
+.socialbar li a:hover {
+    color: var(--darkpink);
+    cursor: pointer;
+}
+
+/* Experiences section */
+.experiencesLanguages_column {
+    margin-left: clamp(5px, 3vw, 50%); /*margin from profile*/
+}
+.experiences_bar {
+    list-style: none;
+    padding-left: 5px;
+    padding-right: clamp(5px, 10%, 500px);
+}
+.experiences_bar li {
+    display: inline-block;
+    font-size: var(--experiencetextsize);
+    font-weight: 500;
+    font-family: 'Oxygen';
+    letter-spacing: 0.1em;
+    margin-top: clamp(5px, 1.2em, 500px);
+}
+.experiences_bar li:before { /*circle*/
+    content: '\25CF'; /*unicode symbol for circle*/
+    margin-right: clamp(5px, 0.7em, 500px); /*margin between txt*/
+    font-size: 1.2em;
+}
+
+/* Languages section */
+#experiencespacing_div {
+    margin-bottom: clamp(5px, 10%, 5000px);
+}
+.languages_container { /*dots and languages*/
+    display: flex;
+    width: 70%;
+    align-items: center;
+}
+/* Text Portion */
+.languages_bar { /*languages list*/
+    flex: 1;
+    list-style: none;
+    padding-left: 0;
+}
+.languages_bar li { /*languages text*/
+    font-family: 'Source Code Pro';
+    font-size: var(--languagestextsize);
+    font-weight: 500;
+    padding-top: clamp(1px, 1.5em, 500px);
+}
+.language_indicator {
+    height: 2px;
+    background-color: var(--darkpink);
+    margin-top: 5px;
+}
+#Python_Languages_bar {
+    width: 95%;
+}
+#Cpp_Languages_bar {
+    width: 60%;
+}
+#Java_Languages_bar {
+    width: 50%;
+}
+#HTML_Languages_bar {
+    width: 90%;
+}
+#CSS_Languages_bar {
+    width: 80%;
+}
+#JS_Languages_bar {
+    width: 45%;
+}
+
+/* Skillsets section*/
+.skill_json {
+    font-size: var(--skillsetstextsize);
+}
+.skill_heading {
+    margin-left: clamp(5px, 1.5em, 500px);
+    margin-bottom: 0;
+    font-size: var(--skillsetstextsize);
+}
+.skill_text {
+    margin-top: 0.5em;
+    margin-left: clamp(5px, 3em, 500px);
+    font-family: 'Roboto Mono';
+    font-size: var(--skillsetstextsize);
+    line-height: 1.4em;
+    letter-spacing: 0.3px;
+}
+
+/* Guilty Pleasures section */
+.guiltypleasures_column {
+    margin-top: clamp(5px, 5vw, 50%); /*margin from profile*/
+}
+#pleasurestext {
+    font-size: var(--pleasurestextsize);
+    font-family: 'Oxygen';
+    line-height: 1.3em;
+}
+#pleasurestext:first-of-type {
+    margin-top: clamp(5px, 7%, 5000px);
+}
+
+
+/*  ~~~~~~~~~~~  MEDIA QUERIES  ~~~~~~~~~~~ */
+@media (max-width:767px) { /*phone*/
+    .undermenu_div {
+        margin-left: clamp(5px, 10%, 1000px); 
+    }
+    .home, 
+    .about {
+        height: auto;
+    }
+
+    .dot,
+    .menu,
+    .developer_div,
+    .home .dotbutton_div,
+    .guiltypleasures_column,
+    .experiencesLanguages_column,
+    .skillsets_column,
+    #sectionline,
+    #projectbox_description,
+    #projectbox_line,
+    #projectbox_txt {
+        display: none;
+    }
+    .projects {
+        margin-top: 30%;
+    }
+    .projectsection_div {
+        display: grid;
+    }
+    .project_box {
+        border: 0;
+        height: 100%;
+        padding: 0;
+    }
+    .project_box:hover {
+        background-color: white;
+        color: var(--darkdarkpink);
+    }
+    .contact_info_text,
+    .socialmedia_horibar {
+        justify-content: left;
+        text-align: left;
+    }
+    :root {    
+        /*Project fonts*/
+        --projectsubheading: 2.5vw;
+        --projectboxheading: 2.5vw;
+    
+        /*Contact fonts*/
+        --contactbody_textsize: 3vw;
+        --contact_iconsize: 4vw;
+    }
+}
+@media (min-width:768px) and (max-width: 1200px) { /*Small computer or tablet*/
+    .dot,
+    .skillsets_column,
+    #projectbox_description,
+    #projectbox_line,
+    #projectbox_txt {
+        display: none;
+    }
+    .projectsection_div {
+        display: grid;
+    }
+    .project_box {
+        border: 0;
+        height: 100%;
+        padding: 0;
+    }
+    .project_box:hover {
+        background-color: white;
+        color: var(--darkdarkpink);
+    }
+    :root {    
+        /*Project fonts*/
+        --projectsubheading: 120%;
+        --projectboxheading: 2.3vw;
+
+        /*Contact fonts*/
+        --contactbody_textsize: 2.3vw;
+        --contact_iconsize: 2.8vw;
+    }
+}

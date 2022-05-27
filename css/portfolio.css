@@ -1,8 +1,9 @@
 .portfolio {  /*align self center*/
     background-color: var(--bg_grey);
     width: 100%;
-    padding-bottom: 10%;
-    padding-top: clamp(2em, 6%, 600px);
+    height: auto;
+    padding-bottom: 6%;
+    padding-top: clamp(2em, 10%, 600px);
     align-self: center;
     padding-left: var(--padding_portfolio);
     padding-right: var(--padding_portfolio);
@@ -50,12 +51,19 @@
 
 @media screen and (min-width: 1550px) { /*greater than 1149 wide screen*/
     .portfolio {
-        padding: 0 11% 15% 11%; /*top right bottom left*/
+        padding: 6% 11% 7% 11%; /*top right bottom left*/
     }
 }
-@media screen and (max-width: 900px) { /*less than 1190*/
+@media screen and (max-width: 900px) { /*less than 900*/
+    .home {
+        height: auto;
+    }
+    .about {
+        height: auto;
+    }
     .portfolio {
-        padding: 0 10% 10% 1%; /*top right bottom left*/
+        padding: 6% 10% 10% 10%; /*top right bottom left*/
+        text-align: center;
     }
     .portfolio_div {
         flex-direction: column;
@@ -66,7 +74,35 @@
         margin: 0 15vw 3em 15vw;
     }
     .portfolio_img {
-        width: 100%;
+        width: 70%;
+        height: 30%;
+    }
+    #portfolio_card_title,
+    #portfolio_card_text {
+        text-align: center;
+    }
+}
+@media screen and (max-width: 500px) { /*less than 500*/
+    #portfolio_title {
+        font-size: 7vw;
+    }
+    #portfolio_subtitle {
+        font-size: 0.9em;
+    }
+    .portfolio {
+        padding: 6% 1% 6% 1%; /*top right bottom left*/
+        text-align: center;
+    }
+    .portfolio_div {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .portfolio_card {
+        align-self: center;
+        margin: 0 15vw 3em 15vw;
+    }
+    .portfolio_img {
+        width: 70%;
         height: 30%;
     }
     #portfolio_card_title,
