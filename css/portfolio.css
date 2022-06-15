@@ -18,6 +18,9 @@
     font-size: var(--section_subtitle);
     margin-bottom: 3em;
 }
+#portfolio_card_text {
+    padding-bottom: 3em;
+}
 .portfolio_div {
     display: flex;
     flex-direction: row;
@@ -54,7 +57,7 @@
         padding: 6% 11% 7% 11%; /*top right bottom left*/
     }
 }
-@media screen and (max-width: 900px) { /*less than 900*/
+@media screen and (max-width: 950px) { /*less than 900*/
     .home {
         height: auto;
     }
