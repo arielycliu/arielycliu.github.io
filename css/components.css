@@ -75,13 +75,13 @@
     transition:.2s ease;
 }
 .arrow:hover::after {
-    transform: rotate(45deg);
-    border-color: var(--accent_purple);
-    height: 115%;
+    /* transform: rotate(45deg) translate(-0.13vmin, 0px); */
+    border-color: var(--accent_arrow);
+    /* height: 115%; */
 }
 .arrow:hover::before {
-    border-color: var(--accent_purple);
-    transform: scale(.9);
+    border-color: var(--accent_arrow);
+    /* transform: scale(.9); */
 }
 @keyframes arrow {
     0% { transform: translate(0,  0px) rotate(135deg); }
