@@ -79,9 +79,17 @@
     border-radius: 15px;
     border: 0px;
     margin: auto;
+    color: black;
 }
 .button.porfolio_button:hover {
     cursor: pointer;
+}
+.button.porfolio_button a{
+    text-decoration: none;
+    color: black;
+}
+.button.porfolio_button a:hover {
+    color: white;
 }
 
 .portfolio_button_div {
