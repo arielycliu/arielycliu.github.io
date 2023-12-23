@@ -1,5 +1,5 @@
 .portfolio {  /*align self center*/
-    background-color: var(--bg_grey);
+    background-color: var(white);
     width: 100%;
     height: auto;
     padding-bottom: 6%;
@@ -19,7 +19,7 @@
     margin-bottom: 3em;
 }
 #portfolio_card_text {
-    padding-bottom: 3em;
+    
 }
 .portfolio_div {
     display: flex;
@@ -49,6 +49,40 @@
     outline-offset: 5px;
     outline: 2px solid black;
     /* box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35); */
+}
+.portfolio_skilltags_flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-bottom: 3em;
+}
+.portfolio_skilltags {
+    flex-grow: 0;
+    border-radius: 6px;
+    margin-right: 0.6em;
+    margin-top: 0.6em;
+    text-align: center;
+    height: fit-content;
+    width: fit-content;
+    padding: 0.3em 1em;
+    font-size: var(--about_skilltag);
+    background-color: var(--lightgrey);
+    color: var(--black);
+}
+.portfolio_skilltags:hover {
+    background-color: var(--grey);
+}
+.button.porfolio_button {
+    border-radius: 15px;
+    border: 0px;
+    align-self: center;
+    margin: auto;
+}
+
+.portfolio_button_div {
+    margin-top: 4rem;
+    text-align: center;
 }
   
 
