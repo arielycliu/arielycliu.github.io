@@ -4,8 +4,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 35vh;
+    padding-bottom: 5%;
     padding-top: 7%;
+    height: 100vh;
 }
 #home_title {
     text-align: center;
@@ -24,7 +25,8 @@
 /* ABOUT */
 .about {
     padding-top: 3%;
-    margin-bottom: 10%;
+    margin-bottom: 3%;
+    height: max-content;
 }
 #about_title {
     margin-left: var(--marginleft_about);

@@ -1,8 +1,8 @@
 .portfolio {  /*align self center*/
     background-color: var(white);
     width: 100%;
-    height: auto;
-    padding-bottom: 6%;
+    height: max-content;
+    padding-bottom: 12%;
     padding-top: clamp(2em, 10%, 600px);
     align-self: center;
     padding-left: var(--padding_portfolio);
@@ -25,6 +25,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    height: auto;
 }
 .portfolio_div a {
     color: black;
@@ -56,6 +57,7 @@
     flex-wrap: wrap;
     width: 100%;
     padding-bottom: 3em;
+    position: relative;
 }
 .portfolio_skilltags {
     flex-grow: 0;
@@ -76,13 +78,16 @@
 .button.porfolio_button {
     border-radius: 15px;
     border: 0px;
-    align-self: center;
     margin: auto;
+}
+.button.porfolio_button:hover {
+    cursor: pointer;
 }
 
 .portfolio_button_div {
-    margin-top: 4rem;
+    margin-top: 2rem;
     text-align: center;
+    position: static;
 }
   
 
