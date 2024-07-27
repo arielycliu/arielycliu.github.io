@@ -18,6 +18,10 @@
     font-size: var(--section_subtitle);
     margin-bottom: 3em;
 }
+.portfolio_subtitle_div {
+    display: flex; 
+    justify-content: left; 
+}
 #portfolio_card_text {
     
 }
@@ -131,6 +135,12 @@
     #portfolio_card_text {
         text-align: center;
     }
+    .portfolio_subtitle_div {
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        text-align: center;
+    }
 }
 @media screen and (max-width: 500px) { /*less than 500*/
     #portfolio_title {
@@ -138,6 +148,8 @@
     }
     #portfolio_subtitle {
         font-size: 0.9em;
+        width: 80%;
+        text-align: center;
     }
     .portfolio {
         padding: 6% 1% 6% 1%; /*top right bottom left*/

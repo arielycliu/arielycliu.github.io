@@ -23,3 +23,12 @@
     font-size: var(--contact_socialbar);
     margin: 5px;
 }
+
+@media screen and (max-width: 950px) {
+    #contact_title {
+        font-size: 7vw;
+    }
+    .contact_text {
+        font-size: 0.9em;
+    }
+}
