@@ -40,7 +40,7 @@
 .portfolio_img {
     border-radius: 9px;
     background-color: #CACDDD;
-    height: 50%;
+    height: auto;
     width: 100%;
     transition: 0.7s box-shadow;
     outline: 2px transparent rgba(0, 0, 0, 0);
@@ -125,7 +125,7 @@
     }
     .portfolio_img {
         width: 70%;
-        height: 30%;
+        height: auto;
     }
     #portfolio_card_title,
     #portfolio_card_text {
@@ -153,7 +153,7 @@
     }
     .portfolio_img {
         width: 70%;
-        height: 30%;
+        height: auto;
     }
     #portfolio_card_title,
     #portfolio_card_text {
